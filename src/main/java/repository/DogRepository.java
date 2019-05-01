@@ -1,8 +1,8 @@
-package canine.project.repository;
+package repository;
 
 import java.util.List;
 
-import canine.project.model.Dog;
+import model.Dog;
 
 public interface DogRepository {
 	List<Dog> findAllDogs();
