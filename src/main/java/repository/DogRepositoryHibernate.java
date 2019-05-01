@@ -1,11 +1,11 @@
-package canine.project.repository;
+package repository;
 
 import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 
-import canine.project.model.Dog;
+import model.Dog;
 
 public class DogRepositoryHibernate implements DogRepository{
 

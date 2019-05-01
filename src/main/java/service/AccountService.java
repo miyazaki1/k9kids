@@ -1,8 +1,8 @@
-package com.project.service;
+package service;
 
 import java.util.List;
 
-import canine.project.model.Account;
+import model.Account;
 
 public interface AccountService {
 	List<Account> findAllAccounts();

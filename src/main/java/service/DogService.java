@@ -1,8 +1,8 @@
-package com.project.service;
+package service;
 
 import java.util.List;
 
-import canine.project.model.Dog;
+import model.Dog;
 
 public interface DogService {
 	List<Dog> findAllDogs ();

@@ -1,12 +1,12 @@
-package com.project.service;
+package service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import canine.project.model.Dog;
-import canine.project.repository.DogRepository;
-import canine.project.repository.DogRepositoryHibernate;
+import model.Dog;
+import repository.DogRepository;
+import repository.DogRepositoryHibernate;
 
 public class DogServiceAlpha implements DogService{
 

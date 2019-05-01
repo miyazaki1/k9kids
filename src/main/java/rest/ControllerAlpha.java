@@ -1,16 +1,21 @@
-package canine.project.rest;
+package rest;
 
+import java.lang.annotation.Annotation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.project.service.AccountService;
-import com.project.service.DogService;
+import service.AccountService;
+import service.DogService;
 
-import canine.project.model.Account;
-import canine.project.model.Dog;
+import model.Account;
+import model.Dog;
 
 @Controller("Controller")
 @CrossOrigin(origins = "http://localhost:4200")
@@ -23,7 +28,7 @@ public class ControllerAlpha implements Controller{
 	
 	@GetMapping("/findAllAccounts")
 	public @ResponseBody List<Account> findAllAccounts() {
-		return accountService.getAllAccounts();
+		return accountService.findAllAccounts();
 	}
 
 	@PostMapping("/findAccount")
@@ -33,12 +38,24 @@ public class ControllerAlpha implements Controller{
 
 	@GetMapping("/findAllDogs")
 	public @ResponseBody List<Dog> findAllDogs() {
-		return dogService.getAllDogs();
+		return dogService.findAllDogs();
 	}
 
 	@PostMapping("/findDog")
 	public @ResponseBody Dog findDog(@RequestBody Dog dog) {
 		return (dogService.getDog(dog.getBreed()));
+	}
+
+	@Override
+	public Class<? extends Annotation> annotationType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String value() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

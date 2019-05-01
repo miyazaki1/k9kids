@@ -1,8 +1,8 @@
-package canine.project.repository;
+package repository;
 
 import java.util.List;
 
-import canine.project.model.Account;
+import model.Account;
 
 public interface AccountRepository {
 	List<Account> getAllAccounts();

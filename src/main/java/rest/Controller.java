@@ -1,9 +1,9 @@
-package canine.project.rest;
+package rest;
 
 import java.util.List;
 
-import canine.project.model.Account;
-import canine.project.model.Dog;
+import model.Account;
+import model.Dog;
 
 public interface Controller {
 
