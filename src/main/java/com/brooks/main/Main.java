@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.brooks.model.Account;
 import com.brooks.service.AccountService;
 import com.brooks.service.DogService;
 
@@ -16,5 +17,9 @@ public class Main {
 	
 		DogService dogService = context.getBean("dogService", DogService.class);
 		AccountService accountService = context.getBean("accountService", AccountService.class);
+		
+		//accountService.createAccount(new Account(0, "test", "testing", "ttesing", "pass123", "test@test.com"));
+		
+		logger.trace(accountService.getAllAccounts());
 	}
 }

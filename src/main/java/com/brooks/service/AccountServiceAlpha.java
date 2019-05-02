@@ -30,4 +30,20 @@ public class AccountServiceAlpha implements AccountService{
 		return accountRepository.getAccountByUsername(username);
 	}
 
+	@Override
+	public void createAccount(Account account) {
+		accountRepository.createAccount(account);
+		
+	}
+
+	@Override
+	public Account updateAccount(Account account) {
+		return accountRepository.updateAccount(account);
+	}
+
+	@Override
+	public void deleteAccount(Account account) {
+		accountRepository.deleteAccount(account);
+	}
+
 }
