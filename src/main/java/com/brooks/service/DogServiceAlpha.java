@@ -30,6 +30,23 @@ public class DogServiceAlpha implements DogService{
 		return dogRepository.getDogByBreed(breed);
 	}
 
+	@Override
+	public void createDog(Dog dog) {
+		dogRepository.createDog(dog);
+		
+	}
+
+	@Override
+	public Dog updateDog(Dog dog) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteDog(Dog dog) {
+		
+	}
+
 
 
 }

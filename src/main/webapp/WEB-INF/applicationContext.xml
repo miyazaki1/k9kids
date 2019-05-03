@@ -21,26 +21,26 @@
 
     <!-- Package Scan -->
     <context:component-scan
-        base-package="repository" />
+        base-package="com.brooks.repository" />
     <context:component-scan
-        base-package="service" />
+        base-package="com.brooks.service" />
         <context:component-scan
-        base-package="view" />
+        base-package="com.brooks.view" />
         <context:component-scan
-        base-package="rest" />
+        base-package="com.brooks.rest" />
 
     <!-- Hiberate integration with contextual sessions -->
     <bean name="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@devops-example.cokpcguleglr.us-east-1.rds.amazonaws.com:1521:ORCL" />
-        <property name="username" value="HEROES"/>
-        <property name="password" value="p4ssw0rd" />
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+        <property name="username" value="system"/>
+        <property name="password" value="oracle" />
     </bean>
 
     <bean name="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="com.revature.model" />
+        <property name="packagesToScan" value="com.brooks.model" />
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
