@@ -49,7 +49,7 @@ public class FrontControllerAlpha implements FrontController{
 
 	@GetMapping("/get")
 	public ResponseEntity<Account> getAccountByUsername(@RequestBody Account account, HttpServletRequest request) {
-		logger.trace("Looking for account by username " + account.getUsername());
+		//logger.trace("Looking for account by username " + account.getUsername());
 		Account foundAcc = accountService.getAccountByUsername(account.getUsername());
 		if(foundAcc != null) {
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
@@ -57,10 +57,33 @@ public class FrontControllerAlpha implements FrontController{
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
+	
+	// For Debugging Purposes
+	@GetMapping("/test/get")
+	public ResponseEntity<Account> getAccountByUsername(@RequestBody String username, HttpServletRequest request) {
+		//logger.trace("Looking for account by username " + username);
+		Account foundAcc = accountService.getAccountByUsername(username);
+		if(foundAcc != null) {
+			
+			System.out.println("========================================================");
+			System.out.println("It FOUND username: " + username);
+			System.out.println("========================================================");
+			
+			
+			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
+		} else {
+			System.out.println("========================================================");
+			System.out.println("It went here instead on username: " + username);
+			System.out.println("========================================================");
+
+			return null;
+			//return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+	}
 
 	@PostMapping("/create")
 	public ResponseEntity<ClientMessage> createAccount(@RequestBody Account account) {
-		logger.trace("Creating account " +account);
+		//logger.trace("Creating account " +account);
 		if(accountService.createAccount(account))
 			return new ResponseEntity<>(ACCOUNT_SUCCESSFUL, HttpStatus.CREATED);
 		else
@@ -70,7 +93,7 @@ public class FrontControllerAlpha implements FrontController{
 	
 	@PutMapping("/update/{username}")
 	public ResponseEntity<ClientMessage> updateAccount(@PathVariable("username") String username, @RequestBody Account account) {
-		logger.trace("UpdatingAccount "+account);
+		//logger.trace("UpdatingAccount "+account);
 		Account a = accountService.getAccountByUsername(username);
 		if(a != null) {
 			accountService.updateAccount(a);
@@ -82,7 +105,7 @@ public class FrontControllerAlpha implements FrontController{
 
 	@DeleteMapping("/delete")
 	public ResponseEntity<ClientMessage> deleteAccount(@RequestBody Account account) {
-		logger.trace("Deleting account "+account);
+		//logger.trace("Deleting account "+account);
 		Account a = accountService.getAccountByUsername(account.getUsername());
 		if(a != null) {
 			accountService.deleteAccount(a);
@@ -91,8 +114,6 @@ public class FrontControllerAlpha implements FrontController{
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 	}
-	
-	
 	
 	@GetMapping("/getAllDogs")
 	public List<Dog> getAllDogs() {
@@ -119,7 +140,4 @@ public class FrontControllerAlpha implements FrontController{
 	public void deleteDog(@RequestBody Dog dog) {
 		 dogService.deleteDog(dog);
 	}
-
-	
-
 }
