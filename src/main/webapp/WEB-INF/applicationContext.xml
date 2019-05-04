@@ -33,9 +33,9 @@
     <bean name="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
-        <property name="username" value="system"/>
-        <property name="password" value="oracle" />
+        <property name="url" value="jdbc:oracle:thin:@revpetapi.c6a23qjxpkwi.us-east-2.rds.amazonaws.com:1521:PETAPI" />
+        <property name="username" value="xio"/>
+        <property name="password" value="password28" />
     </bean>
 
     <bean name="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
