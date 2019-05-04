@@ -15,7 +15,7 @@ import com.brooks.model.Account;
 public class AccountRepositoryHibernate implements AccountRepository{
 	
 	@Autowired
-	public SessionFactory sessionFactory;
+	private SessionFactory sessionFactory;
 	
 	public AccountRepositoryHibernate() {}
 	
@@ -28,7 +28,7 @@ public class AccountRepositoryHibernate implements AccountRepository{
 	@Override
 	public Account getAccountByUsername(String username) {
 		try {
-			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class)
+			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
 					.add(Restrictions.like("username", username))
 					.list()
 					.get(0);

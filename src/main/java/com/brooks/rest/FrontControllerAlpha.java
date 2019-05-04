@@ -7,13 +7,17 @@ import static com.brooks.util.ClientMessageUtil.UPDATE_UNSUCCESSFUL;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,7 +32,7 @@ import com.brooks.service.DogService;
 
 @RestController("frontController")
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping(path="/account")
+@RequestMapping(path="/account", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class FrontControllerAlpha implements FrontController{
 
 	private static Logger logger = Logger.getLogger(FrontControllerAlpha.class);
@@ -44,8 +48,8 @@ public class FrontControllerAlpha implements FrontController{
 	}
 
 	@GetMapping("/get")
-	public ResponseEntity<Account> getAccountByUsername(@RequestBody Account account) {
-		logger.trace("Looking for account by username " +account);
+	public ResponseEntity<Account> getAccountByUsername(@RequestBody Account account, HttpServletRequest request) {
+		logger.trace("Looking for account by username " + account.getUsername());
 		Account foundAcc = accountService.getAccountByUsername(account.getUsername());
 		if(foundAcc != null) {
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
@@ -64,10 +68,10 @@ public class FrontControllerAlpha implements FrontController{
 		
 	}
 	
-	@PutMapping("/update")
-	public ResponseEntity<ClientMessage> updateAccount(@RequestBody Account account) {
+	@PutMapping("/update/{username}")
+	public ResponseEntity<ClientMessage> updateAccount(@PathVariable("username") String username, @RequestBody Account account) {
 		logger.trace("UpdatingAccount "+account);
-		Account a = accountService.getAccountByUsername(account.getUsername());
+		Account a = accountService.getAccountByUsername(username);
 		if(a != null) {
 			accountService.updateAccount(a);
 			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
