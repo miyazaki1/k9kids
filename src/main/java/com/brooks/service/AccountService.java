@@ -10,4 +10,5 @@ public interface AccountService {
 	boolean createAccount(Account account);
 	public Account updateAccount(Account account);
 	void deleteAccount(Account account);
+	Account validateAccountLogin(String username, String password);
 }

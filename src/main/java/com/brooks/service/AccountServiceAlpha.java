@@ -33,6 +33,12 @@ public class AccountServiceAlpha implements AccountService{
 	public Account getAccountByUsername(String username) {
 		return accountRepository.getAccountByUsername(username);
 	}
+	
+	@Override
+	@Transactional
+	public Account validateAccountLogin(String username, String password){
+		return accountRepository.validateAccountLogin(username, password);
+	}
 
 	@Override
 	public boolean createAccount(Account account) {
