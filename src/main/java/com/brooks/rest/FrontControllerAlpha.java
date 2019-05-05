@@ -35,6 +35,7 @@ import com.brooks.service.DogService;
 @RequestMapping(path="/account", produces = {MediaType.APPLICATION_JSON_VALUE})
 public class FrontControllerAlpha implements FrontController{
 
+	@SuppressWarnings("unused")
 	private static Logger logger = Logger.getLogger(FrontControllerAlpha.class);
 	
 	@Autowired
@@ -49,7 +50,7 @@ public class FrontControllerAlpha implements FrontController{
 
 	@GetMapping("/get")
 	public ResponseEntity<Account> getAccountByUsername(@RequestBody Account account, HttpServletRequest request) {
-		//logger.trace("Looking for account by username " + account.getUsername());
+		//logger.trace("Looking for account by username " + account.getUsername());		
 		Account foundAcc = accountService.getAccountByUsername(account.getUsername());
 		if(foundAcc != null) {
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
@@ -57,12 +58,13 @@ public class FrontControllerAlpha implements FrontController{
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
-	
+
 	// For Debugging Purposes
 	@GetMapping("/test/get")
 	public ResponseEntity<Account> getAccountByUsername(@RequestBody String username, HttpServletRequest request) {
 		//logger.trace("Looking for account by username " + username);
 		Account foundAcc = accountService.getAccountByUsername(username);
+				
 		if(foundAcc != null) {
 			
 			System.out.println("========================================================");
@@ -73,11 +75,14 @@ public class FrontControllerAlpha implements FrontController{
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
 		} else {
 			System.out.println("========================================================");
-			System.out.println("It went here instead on username: " + username);
+			System.out.println("It LOST username: " + username);
+			
+			System.out.println(foundAcc);
+			
 			System.out.println("========================================================");
 
-			return null;
-			//return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			//return null;
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 
@@ -113,6 +118,15 @@ public class FrontControllerAlpha implements FrontController{
 		} else {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
+	}
+
+	// Check The account login information and sending through to the front end.
+	@PostMapping("Login")
+	public Account loginUser(@RequestBody Account account, HttpServletRequest request) {
+		
+		
+		
+		return null;
 	}
 	
 	@GetMapping("/getAllDogs")

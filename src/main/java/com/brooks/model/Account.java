@@ -9,7 +9,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ACCOUNT")
+@Table(name="XIO.ACCOUNT")
 public class Account {
 	
 	@Id

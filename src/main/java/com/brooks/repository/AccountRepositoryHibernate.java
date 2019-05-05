@@ -27,30 +27,11 @@ public class AccountRepositoryHibernate implements AccountRepository{
 
 	@Override
 	public Account getAccountByUsername(String username) {
-		try {
-			
-			
-		Account result = new Account();
-		
-		
-		System.out.println("Searching For: " + username);
-		for(int i = 0; i < getAllAccounts().size(); i++) {
-			
-			if(getAllAccounts().get(i).getUsername() == username) {
-				result = getAllAccounts().get(i);
-		
-				System.out.println("FOUND USERNAME: " + username);
-				break;
-			}
-		}
-			
-		System.out.println("Returning account: " + result.getUsername() + " by username: " + username);
-		return result;
-			
-//			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
-//					.add(Restrictions.like("username", username))
-//					.list()
-//					.get(0);
+		try {			
+			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
+					.add(Restrictions.like("username", username))
+					.list()
+					.get(0);
 		}
 		catch (IndexOutOfBoundsException e) {
 			return null;
@@ -60,7 +41,6 @@ public class AccountRepositoryHibernate implements AccountRepository{
 	@Override
 	public void createAccount(Account account) {
 		sessionFactory.getCurrentSession().save(account);
-		
 	}
 
 	@Override
