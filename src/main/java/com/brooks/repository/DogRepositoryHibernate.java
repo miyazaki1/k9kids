@@ -40,7 +40,6 @@ public class DogRepositoryHibernate implements DogRepository{
 	@Override
 	public void createDog(Dog dog) {
 		sessionFactory.getCurrentSession().save(dog);
-		
 	}
 
 	@Override
