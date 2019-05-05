@@ -37,4 +37,19 @@ public class DogRepositoryHibernate implements DogRepository{
 		}
 	}
 
+	@Override
+	public void createDog(Dog dog) {
+		sessionFactory.getCurrentSession().save(dog);
+	}
+
+	@Override
+	public Dog updateDog(Dog dog) {
+		return (Dog) sessionFactory.getCurrentSession().save(dog);
+	}
+
+	@Override
+	public void deleteDog(Dog dog) {
+		
+	}
+
 }
