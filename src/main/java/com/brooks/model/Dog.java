@@ -33,7 +33,6 @@ public class Dog {
 	@Column(name="lifespan")
 	private int lifespan;
 	
-	
 	public int getUser_id() {
 		return user_id;
 	}
@@ -84,6 +83,4 @@ public class Dog {
 		return "Dog [id=" + user_id + ", breed=" + breed + ", description=" + description + ", weight=" + weight
 				+ ", height=" + height + ", lifespan=" + lifespan + "]";
 	} 
-	
-
 }

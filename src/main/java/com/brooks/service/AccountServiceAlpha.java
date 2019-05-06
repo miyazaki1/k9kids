@@ -4,16 +4,16 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.brooks.model.Account;
 import com.brooks.repository.AccountRepository;
-import com.brooks.repository.AccountRepositoryHibernate;
 
 @Service("accountService")
 public class AccountServiceAlpha implements AccountService{
 
 	@Autowired
-	private AccountRepository accountRepository= new AccountRepositoryHibernate();
+	private AccountRepository accountRepository;
 	
 	public AccountServiceAlpha() {}
 	
@@ -22,12 +22,22 @@ public class AccountServiceAlpha implements AccountService{
 		this.accountRepository = accountRepository;
 	}
 
+	@Override
+	@Transactional
 	public List<Account> getAllAccounts() {
 		return accountRepository.getAllAccounts();
 	}
 
+	@Override
+	@Transactional
 	public Account getAccountByUsername(String username) {
 		return accountRepository.getAccountByUsername(username);
+	}
+	
+	@Override
+	@Transactional
+	public Account validateAccountLogin(String username, String password){
+		return accountRepository.validateAccountLogin(username, password);
 	}
 
 	@Override

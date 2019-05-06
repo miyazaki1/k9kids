@@ -15,7 +15,7 @@ import com.brooks.model.Account;
 public class AccountRepositoryHibernate implements AccountRepository{
 	
 	@Autowired
-	public SessionFactory sessionFactory;
+	private SessionFactory sessionFactory;
 	
 	public AccountRepositoryHibernate() {}
 	
@@ -27,20 +27,35 @@ public class AccountRepositoryHibernate implements AccountRepository{
 
 	@Override
 	public Account getAccountByUsername(String username) {
-		try {
-			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class)
+		try {			
+			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
 					.add(Restrictions.like("username", username))
 					.list()
 					.get(0);
-		} catch (IndexOutOfBoundsException e) {
+		}
+		catch (IndexOutOfBoundsException e) {
 			return null;
 		}
 	}
 	
 	@Override
+	public Account validateAccountLogin(String username, String password) {
+		try {			
+			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
+					.add(Restrictions.like("username", username)).add(Restrictions.like("password", password))
+					.list()
+					.get(0);
+		}
+		catch (IndexOutOfBoundsException e) {
+			return null;
+		}
+	}
+	
+	
+	
+	@Override
 	public void createAccount(Account account) {
 		sessionFactory.getCurrentSession().save(account);
-		
 	}
 
 	@Override
@@ -52,6 +67,6 @@ public class AccountRepositoryHibernate implements AccountRepository{
 	public void deleteAccount(Account account) {
 		
 	}
-	
+
 
 }

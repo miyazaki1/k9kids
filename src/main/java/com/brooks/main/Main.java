@@ -20,6 +20,6 @@ public class Main {
 		
 		//accountService.createAccount(new Account(0, "test", "testing", "ttesing", "pass123", "test@test.com"));
 		
-		logger.trace(accountService.getAllAccounts());
+		//logger.trace(accountService.getAllAccounts());
 	}
 }
