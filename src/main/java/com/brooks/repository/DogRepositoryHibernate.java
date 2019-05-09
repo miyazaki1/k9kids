@@ -2,8 +2,8 @@ package com.brooks.repository;
 
 import java.util.List;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,15 +26,8 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog getDogByBreed(String breed) {
-		try {
-			return (Dog) sessionFactory.getCurrentSession().createCriteria(Dog.class)
-					.add(Restrictions.like("breed", breed))
-					.list()
-					.get(0);
-		} catch (IndexOutOfBoundsException e) {
-			return null;
-		}
+	public Dog getDogByUserId(int user_id) {
+		return (Dog) sessionFactory.getCurrentSession().get(Dog.class, user_id);
 	}
 
 	@Override
@@ -43,13 +36,20 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog updateDog(Dog dog) {
-		return (Dog) sessionFactory.getCurrentSession().save(dog);
+	public void updateDog(int user_id, Dog dog) {
+		Session session = sessionFactory.getCurrentSession();
+		Dog d = (Dog) session.byId(Dog.class).load(user_id);
+		d.setDescription(d.getDescription());
+		d.setHeight(d.getHeight());
+		d.setWeight(d.getWeight());
+		d.setLifespan(d.getLifespan());
 	}
 
 	@Override
-	public void deleteDog(Dog dog) {
-		
+	public void deleteDog(int user_id) {
+		Session session = sessionFactory.getCurrentSession();
+		Dog d = (Dog) session.byId(Dog.class).load(user_id);
+		session.delete(d);
 	}
 
 }

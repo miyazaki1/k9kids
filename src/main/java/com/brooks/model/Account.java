@@ -8,13 +8,18 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name="XIO.ACCOUNT")
 public class Account {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="accountSequence")
-	@SequenceGenerator(name="accountSequence", sequenceName="ACCOUNT_SEQ", allocationSize=1)
+	@GeneratedValue(generator= "UUID")
+	@GenericGenerator(name="UUID", strategy="org.hibernate.id.UUIDGenerator")
+	@Column(name="username")
+    String username;
+	
 	@Column(name="user_id")
     int user_id;
 	
@@ -23,9 +28,6 @@ public class Account {
 	
 	@Column(name="last_name")
     String last_name;
-	
-	@Column(name="username")
-    String username;
 	
 	@Column(name="password")
     String password;
