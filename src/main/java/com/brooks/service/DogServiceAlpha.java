@@ -31,8 +31,8 @@ public class DogServiceAlpha implements DogService{
 
 	@Override
 	@Transactional
-	public Dog getDogByUserId(int user_id) {
-		return dogRepository.getDogByUserId(user_id);
+	public Dog getDogByUsername(String username) {
+		return dogRepository.getDogByUsername(username);
 	}
 
 	@Override
@@ -42,13 +42,13 @@ public class DogServiceAlpha implements DogService{
 	}
 
 	@Override
-	public void updateDog(int user_id, Dog dog) {
-		dogRepository.updateDog(user_id, dog);
+	public void updateDog(String username, Dog dog) {
+		dogRepository.updateDog(username, dog);
 	}
 
 	@Override
-	public void deleteDog(int user_id) {
-		dogRepository.deleteDog(user_id);
+	public void deleteDog(String username) {
+		dogRepository.deleteDog(username);
 	}
 
 

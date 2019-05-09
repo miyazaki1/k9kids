@@ -17,8 +17,8 @@ public interface FrontController {
 	ResponseEntity<ClientMessage> deleteAccount(String username);
 	
 	List<Dog> getAllDogs();
-	ResponseEntity<Dog> getDogByUserId(int user_id, Dog dog);
+	ResponseEntity<Dog> getDogByUsername(String username, Dog dog);
 	ResponseEntity<ClientMessage> createDog(Dog dog);
-	ResponseEntity<ClientMessage> updateDog(int user_id, Dog dog);
-	ResponseEntity<ClientMessage> deleteDog(int user_id);
+	ResponseEntity<ClientMessage> updateDog(String username, Dog dog);
+	ResponseEntity<ClientMessage> deleteDog(String username);
 }

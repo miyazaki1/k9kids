@@ -6,8 +6,8 @@ import com.brooks.model.Dog;
 
 public interface DogService {
 	List<Dog> getAllDogs ();
-	public Dog getDogByUserId(int user_id);
+	public Dog getDogByUsername(String username);
 	boolean createDog(Dog dog);
-	public void updateDog(int user_id, Dog dog);
-	public void deleteDog(int user_id);
+	public void updateDog(String username, Dog dog);
+	public void deleteDog(String username);
 }
