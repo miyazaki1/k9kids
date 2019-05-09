@@ -26,7 +26,7 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog getDogByBreed(String breed) {
+	public Dog getDogByBreed(int breed) {
 		try {
 			return (Dog) sessionFactory.getCurrentSession().createCriteria(Dog.class)
 					.add(Restrictions.like("breed", breed))

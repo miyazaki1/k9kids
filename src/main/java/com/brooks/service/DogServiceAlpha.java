@@ -26,7 +26,7 @@ public class DogServiceAlpha implements DogService{
 		return dogRepository.getAllDogs();
 	}
 
-	public Dog getDogByBreed(String breed) {
+	public Dog getDogByBreed(int breed) {
 		return dogRepository.getDogByBreed(breed);
 	}
 
