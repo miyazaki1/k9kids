@@ -26,8 +26,8 @@ public class DogServiceAlpha implements DogService{
 		return dogRepository.getAllDogs();
 	}
 
-	public Dog getDogByBreed(int breed) {
-		return dogRepository.getDogByBreed(breed);
+	public Dog getDogByBreed(String username) {
+		return dogRepository.getDogByBreed(username);
 	}
 
 	@Override
@@ -45,6 +45,12 @@ public class DogServiceAlpha implements DogService{
 	@Override
 	public void deleteDog(Dog dog) {
 		
+	}
+
+	@Override
+	public Dog getDogByBreed(int breed) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

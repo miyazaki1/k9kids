@@ -26,10 +26,10 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog getDogByBreed(int breed) {
+	public Dog getDogByBreed(String username) {
 		try {
 			return (Dog) sessionFactory.getCurrentSession().createCriteria(Dog.class)
-					.add(Restrictions.like("breed", breed))
+					.add(Restrictions.like("username", username))
 					.list()
 					.get(0);
 		} catch (IndexOutOfBoundsException e) {

@@ -15,18 +15,18 @@ public class Dog {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="dogSequence")
 	@SequenceGenerator(name="dogSequence", sequenceName="DOG_SEQ", allocationSize=1)
-	@Column(name="user_id")
-	private int user_id;
+	@Column(name="username")
+	private String username;
 	
 	@Column(name="breed")
 	private int breed;
 
-	public int getUser_id() {
-		return user_id;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public int getBreed() {
@@ -39,15 +39,19 @@ public class Dog {
 
 	@Override
 	public String toString() {
-		return "Dog [user_id=" + user_id + ", breed=" + breed + "]";
+		return "Dog [username=" + username + ", breed=" + breed + "]";
 	}
 
-	public Dog(int user_id, int breed) {
+	public Dog(String username, int breed) {
 		super();
-		this.user_id = user_id;
+		this.username = username;
 		this.breed = breed;
-	} 
-	
-	
+	}
+
+	public Dog() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	
 }
