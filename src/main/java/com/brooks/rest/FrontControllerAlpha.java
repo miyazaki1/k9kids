@@ -114,9 +114,9 @@ public class FrontControllerAlpha implements FrontController {
 		return dogService.getAllDogs();
 	}
 
-	@GetMapping("/getDog/{user_id}")
-	public ResponseEntity<Dog> getDogByUserId(@PathVariable("user_id") int user_id, @RequestBody Dog dog) {
-		Dog findDog = dogService.getDogByUserId(user_id);
+	@GetMapping("/getDog/{username}")
+	public ResponseEntity<Dog> getDogByUsername(@PathVariable("username") String username, @RequestBody Dog dog) {
+		Dog findDog = dogService.getDogByUsername(username);
 		if(findDog != null) {
 			return new ResponseEntity<>(findDog, HttpStatus.OK);
 		} else {
@@ -134,24 +134,24 @@ public class FrontControllerAlpha implements FrontController {
 
 	}
 
-	@PutMapping("/updateDog/{user_id}")
-	public ResponseEntity<ClientMessage> updateDog(@PathVariable("user_id") int user_id, @RequestBody Dog dog) {
+	@PutMapping("/updateDog/{username}")
+	public ResponseEntity<ClientMessage> updateDog(@PathVariable("username") String username, @RequestBody Dog dog) {
 		//logger.trace("UpdatingDog "+ Dog);
-		Dog d = dogService.getDogByUserId(user_id);
+		Dog d = dogService.getDogByUsername(username);
 		if(d != null) {
-			dogService.updateDog(user_id, d);
+			dogService.updateDog(username, d);
 			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.BAD_REQUEST);
 		}
 	}
 
-	@DeleteMapping("/deleteDog/{user_id}")
-	public ResponseEntity<ClientMessage> deleteDog(@PathVariable("user_id") int user_id) {
+	@DeleteMapping("/deleteDog/{username}")
+	public ResponseEntity<ClientMessage> deleteDog(@PathVariable("username") String username) {
 	//logger.trace("Deleting dog "+ dog);
-		Dog d = dogService.getDogByUserId(user_id);
+		Dog d = dogService.getDogByUsername(username);
 		if(d != null) {
-			dogService.deleteDog(user_id);
+			dogService.deleteDog(username);
 			return new ResponseEntity<>(HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

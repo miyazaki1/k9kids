@@ -26,8 +26,8 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog getDogByUserId(int user_id) {
-		return (Dog) sessionFactory.getCurrentSession().get(Dog.class, user_id);
+	public Dog getDogByUsername(String username) {
+		return (Dog) sessionFactory.getCurrentSession().get(Dog.class, username);
 	}
 
 	@Override
@@ -36,19 +36,16 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public void updateDog(int user_id, Dog dog) {
+	public void updateDog(String username, Dog dog) {
 		Session session = sessionFactory.getCurrentSession();
-		Dog d = (Dog) session.byId(Dog.class).load(user_id);
-		d.setDescription(d.getDescription());
-		d.setHeight(d.getHeight());
-		d.setWeight(d.getWeight());
-		d.setLifespan(d.getLifespan());
+		Dog d = (Dog) session.byId(Dog.class).load(username);
+		d.setBreed_id(d.getBreed_id());
 	}
 
 	@Override
-	public void deleteDog(int user_id) {
+	public void deleteDog(String username) {
 		Session session = sessionFactory.getCurrentSession();
-		Dog d = (Dog) session.byId(Dog.class).load(user_id);
+		Dog d = (Dog) session.byId(Dog.class).load(username);
 		session.delete(d);
 	}
 
