@@ -79,6 +79,7 @@ public class FrontControllerAlpha implements FrontController {
 			accountService.updateAccount(username, a);
 			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
 		} else {
+			
 			return new ResponseEntity<>(UPDATE_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
 		}
 	}
