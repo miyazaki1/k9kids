@@ -148,7 +148,7 @@ public class FrontControllerAlpha implements FrontController {
 
 	@DeleteMapping("/deleteDog/{username}")
 	public ResponseEntity<ClientMessage> deleteDog(@PathVariable("username") String username) {
-	//logger.trace("Deleting dog "+ dog);
+	//logger.trace("Deleting dog "+dog);
 		Dog d = dogService.getDogByUsername(username);
 		if(d != null) {
 			dogService.deleteDog(username);
