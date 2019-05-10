@@ -14,12 +14,11 @@ import com.brooks.repository.DogRepositoryHibernate;
 public class DogServiceAlpha implements DogService{
 
 	@Autowired
-	private DogRepository dogRepository = new DogRepositoryHibernate();
+	private DogRepository dogRepository;;
 	
 	public DogServiceAlpha() {}
 	
 	public DogServiceAlpha(DogRepository dogRepository) {
-		super();
 		this.dogRepository = dogRepository;
 	}
 

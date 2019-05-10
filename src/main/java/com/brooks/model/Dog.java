@@ -2,28 +2,43 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
-@Table(name="DOG")
+@Table(name="XIO.DOG")
 public class Dog {
 	
 	@Id
+	@GeneratedValue(generator= "UUID")
+	@GenericGenerator(name="UUID", strategy="org.hibernate.id.UUIDGenerator")
+	@Column(name="user_id")
+	String user_id;
+	
 	@Column(name="username")
 	String username;
 	
 	@Column(name="breed")
-	long breed;
+	int breed;
 
-	public Dog() {
-		super();
-	}
+	public Dog() {}
 
-	public Dog(String username, long breed) {
+	public Dog(String user_id, String username, int breed) {
 		super();
+		this.user_id = user_id;
 		this.username = username;
 		this.breed = breed;
+	}
+
+	public String getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	public String getUsername() {
@@ -34,19 +49,22 @@ public class Dog {
 		this.username = username;
 	}
 
-	public Long getBreed() {
+	public int getBreed() {
 		return breed;
 	}
 
-	public void setBreed(long breed) {
+	public void setBreed(int breed) {
 		this.breed = breed;
 	}
+
+	
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + (int) (breed ^ (breed >>> 32));
+		result = prime * result + breed;
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -62,6 +80,11 @@ public class Dog {
 		Dog other = (Dog) obj;
 		if (breed != other.breed)
 			return false;
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
+			return false;
 		if (username == null) {
 			if (other.username != null)
 				return false;
@@ -72,9 +95,10 @@ public class Dog {
 
 	@Override
 	public String toString() {
-		return "Dog [username=" + username + ", breed=" + breed + "]";
+		return "Dog [user_id=" + user_id + ", username=" + username + ", breed=" + breed + "]";
 	}
 
+	
 
 	
 }
