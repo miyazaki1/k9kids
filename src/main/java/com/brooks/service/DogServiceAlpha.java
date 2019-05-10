@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.brooks.model.Dog;
 import com.brooks.repository.DogRepository;
@@ -22,29 +23,32 @@ public class DogServiceAlpha implements DogService{
 		this.dogRepository = dogRepository;
 	}
 
+	@Override
+	@Transactional
 	public List<Dog> getAllDogs() {
 		return dogRepository.getAllDogs();
 	}
 
-	public Dog getDogByBreed(String breed) {
-		return dogRepository.getDogByBreed(breed);
+	@Override
+	@Transactional
+	public Dog getDogByUsername(String username) {
+		return dogRepository.getDogByUsername(username);
 	}
 
 	@Override
-	public void createDog(Dog dog) {
+	public boolean createDog(Dog dog) {
 		dogRepository.createDog(dog);
-		
+		return true;
 	}
 
 	@Override
-	public Dog updateDog(Dog dog) {
-		// TODO Auto-generated method stub
-		return null;
+	public void updateDog(String username, Dog dog) {
+		dogRepository.updateDog(username, dog);
 	}
 
 	@Override
-	public void deleteDog(Dog dog) {
-		
+	public void deleteDog(String username) {
+		dogRepository.deleteDog(username);
 	}
 
 

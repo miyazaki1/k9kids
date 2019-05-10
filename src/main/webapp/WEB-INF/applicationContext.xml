@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xmlns:tx="http://www.springframework.org/schema/tx"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
-		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
-		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
-
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
     <!-- Enable Annotations for MVC -->
-   
-    <mvc:annotation-driven/>
-  
-  <!-- different location for static files -->
-  <mvc:resources location="/static" mapping="/static/**" />
- 
+    <mvc:annotation-driven />
+    <!-- different location for static files -->
+    <mvc:resources location="/dist" mapping="/dist/**" />
     <!-- Enable @Transactional -->
     <tx:annotation-driven />
-
     <!-- Package Scan -->
+    <context:component-scan
+        base-package="com.brooks.model" />
     <context:component-scan
         base-package="com.brooks.repository" />
     <context:component-scan
         base-package="com.brooks.service" />
-        <context:component-scan
+    <context:component-scan
         base-package="com.brooks.view" />
-        <context:component-scan
+    <context:component-scan
         base-package="com.brooks.rest" />
-
     <!-- Hiberate integration with contextual sessions -->
     <bean name="dataSource"
         class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
-        <property name="username" value="system"/>
-        <property name="password" value="oracle" />
+        <property name="driverClassName"
+            value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url"
+            value="jdbc:oracle:thin:@revpetapi.c6a23qjxpkwi.us-east-2.rds.amazonaws.com:1521:PETAPI" />
+        <property name="username" value="Miyazaki1" />
+        <property name="password" value="KinomotoSakura10" />
     </bean>
-
-    <bean name="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    
+    <bean name="sessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="packagesToScan" value="com.brooks.model" />
         <property name="hibernateProperties">
@@ -50,8 +49,8 @@
         </property>
     </bean>
     
-    <bean name="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <bean name="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
-    
 </beans>

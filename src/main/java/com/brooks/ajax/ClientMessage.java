@@ -17,9 +17,5 @@ public class ClientMessage {
 	public void setMessage(String message) {
 		Message = message;
 	}
-
-	
-	
-	
 	
 }

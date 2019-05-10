@@ -2,88 +2,85 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="DOG")
+@Table(name="MASTER.DOG")
 public class Dog {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="dogSequence")
-	@SequenceGenerator(name="dogSequence", sequenceName="DOG_SEQ", allocationSize=1)
-	@Column(name="user_id")
-	private int user_id;
+	//@ManyToMany
+	@JoinColumn(name="username", referencedColumnName= "username")
+	String username;
 	
 	@Column(name="breed")
-	private String breed; 
-	
-	@Column(name="description")
-	private String description; 
-	
-	@Column(name="weight")
-	private double weight;
-	
-	@Column(name="height")
-	private double height; 
-	
-	@Column(name="lifespan")
-	private int lifespan;
-	
-	
-	public int getUser_id() {
-		return user_id;
-	}
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
-	}
-	public String getBreed() {
-		return breed;
-	}
-	public void setBreed(String breed) {
-		this.breed = breed;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	public double getWeight() {
-		return weight;
-	}
-	public void setWeight(double weight) {
-		this.weight = weight;
-	}
-	public double getHeight() {
-		return height;
-	}
-	public void setHeight(double height) {
-		this.height = height;
-	}
-	public int getLifespan() {
-		return lifespan;
-	}
-	public void setLifespan(int lifespan) {
-		this.lifespan = lifespan;
-	}
-	public Dog(int id, String breed, String description, double weight, double height, int lifespan) {
+	Long breed_id;
+
+	public Dog() {
 		super();
-		this.user_id = id;
-		this.breed = breed;
-		this.description = description;
-		this.weight = weight;
-		this.height = height;
-		this.lifespan = lifespan;
 	}
+
+	public Dog(String username, Long breed_id) {
+		super();
+		this.username = username;
+		this.breed_id = breed_id;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public Long getBreed_id() {
+		return breed_id;
+	}
+
+	public void setBreed_id(Long breed_id) {
+		this.breed_id = breed_id;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((breed_id == null) ? 0 : breed_id.hashCode());
+		result = prime * result + ((username == null) ? 0 : username.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dog other = (Dog) obj;
+		if (breed_id == null) {
+			if (other.breed_id != null)
+				return false;
+		} else if (!breed_id.equals(other.breed_id))
+			return false;
+		if (username == null) {
+			if (other.username != null)
+				return false;
+		} else if (!username.equals(other.username))
+			return false;
+		return true;
+	}
+
 	@Override
 	public String toString() {
-		return "Dog [id=" + user_id + ", breed=" + breed + ", description=" + description + ", weight=" + weight
-				+ ", height=" + height + ", lifespan=" + lifespan + "]";
+		return "Dog [username=" + username + ", breed_id=" + breed_id + "]";
 	} 
 	
-
+	
+	
 }

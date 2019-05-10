@@ -2,8 +2,8 @@ package com.brooks.repository;
 
 import java.util.List;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,31 +26,27 @@ public class DogRepositoryHibernate implements DogRepository{
 	}
 
 	@Override
-	public Dog getDogByBreed(String breed) {
-		try {
-			return (Dog) sessionFactory.getCurrentSession().createCriteria(Dog.class)
-					.add(Restrictions.like("breed", breed))
-					.list()
-					.get(0);
-		} catch (IndexOutOfBoundsException e) {
-			return null;
-		}
+	public Dog getDogByUsername(String username) {
+		return (Dog) sessionFactory.getCurrentSession().get(Dog.class, username);
 	}
 
 	@Override
 	public void createDog(Dog dog) {
 		sessionFactory.getCurrentSession().save(dog);
-		
 	}
 
 	@Override
-	public Dog updateDog(Dog dog) {
-		return (Dog) sessionFactory.getCurrentSession().save(dog);
+	public void updateDog(String username, Dog dog) {
+		Session session = sessionFactory.getCurrentSession();
+		Dog d = (Dog) session.byId(Dog.class).load(username);
+		d.setBreed_id(d.getBreed_id());
 	}
 
 	@Override
-	public void deleteDog(Dog dog) {
-		
+	public void deleteDog(String username) {
+		Session session = sessionFactory.getCurrentSession();
+		Dog d = (Dog) session.byId(Dog.class).load(username);
+		session.delete(d);
 	}
 
 }
