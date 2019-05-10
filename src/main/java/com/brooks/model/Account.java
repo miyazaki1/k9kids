@@ -4,8 +4,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -17,12 +15,8 @@ public class Account {
 	@Id
 	@GeneratedValue(generator= "UUID")
 	@GenericGenerator(name="UUID", strategy="org.hibernate.id.UUIDGenerator")
-	@OneToMany
-	//@JoinColumn(name="username", referencedColumnName= "username")
+	@Column(name="username")
     String username;
-	
-	@Column(name="user_id")
-    int user_id;
 	
 	@Column(name="first_name")
     String first_name;
@@ -40,22 +34,15 @@ public class Account {
         super();
     }
     
-    public Account(int user_id, String first_name, String last_name, String username, String password, String email) {
+    public Account(String username, String first_name, String last_name, String password, String email) {
         super();
-        this.user_id = user_id;
+        this.username = username;
         this.first_name = first_name;
         this.last_name = last_name;
-        this.username = username;
         this.password = password;
         this.email = email;
     }
     
-    public int getUser_id() {
-        return user_id;
-    }
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
     public String getFirst_name() {
         return first_name;
     }
@@ -88,7 +75,7 @@ public class Account {
     }
     @Override
     public String toString() {
-        return "Account [user_id=" + user_id + ", first_name=" + first_name + ", last_name=" + last_name + ", username="
+        return "Account [first_name=" + first_name + ", last_name=" + last_name + ", username="
                 + username + ", password=" + password + ", email=" + email + "]";
     }
     

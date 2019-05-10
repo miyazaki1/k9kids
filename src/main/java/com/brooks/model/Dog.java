@@ -2,29 +2,28 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="DOG")
 public class Dog {
 	
-	@ManyToOne
-	@JoinColumn(name="username", referencedColumnName= "username")
+	@Id
+	@Column(name="username")
 	String username;
 	
-	@Column(name="breed_id")
-	Long breed_id;
+	@Column(name="breed")
+	long breed;
 
 	public Dog() {
 		super();
 	}
 
-	public Dog(String username, Long breed_id) {
+	public Dog(String username, long breed) {
 		super();
 		this.username = username;
-		this.breed_id = breed_id;
+		this.breed = breed;
 	}
 
 	public String getUsername() {
@@ -35,19 +34,19 @@ public class Dog {
 		this.username = username;
 	}
 
-	public Long getBreed_id() {
-		return breed_id;
+	public Long getBreed() {
+		return breed;
 	}
 
-	public void setBreed_id(Long breed_id) {
-		this.breed_id = breed_id;
+	public void setBreed(long breed) {
+		this.breed = breed;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((breed_id == null) ? 0 : breed_id.hashCode());
+		result = prime * result + (int) (breed ^ (breed >>> 32));
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -61,10 +60,7 @@ public class Dog {
 		if (getClass() != obj.getClass())
 			return false;
 		Dog other = (Dog) obj;
-		if (breed_id == null) {
-			if (other.breed_id != null)
-				return false;
-		} else if (!breed_id.equals(other.breed_id))
+		if (breed != other.breed)
 			return false;
 		if (username == null) {
 			if (other.username != null)
@@ -76,9 +72,9 @@ public class Dog {
 
 	@Override
 	public String toString() {
-		return "Dog [username=" + username + ", breed_id=" + breed_id + "]";
-	} 
-	
-	
+		return "Dog [username=" + username + ", breed=" + breed + "]";
+	}
+
+
 	
 }
