@@ -3,9 +3,9 @@ package com.brooks.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -17,7 +17,8 @@ public class Account {
 	@Id
 	@GeneratedValue(generator= "UUID")
 	@GenericGenerator(name="UUID", strategy="org.hibernate.id.UUIDGenerator")
-	@Column(name="username")
+	@OneToMany
+	//@JoinColumn(name="username", referencedColumnName= "username")
     String username;
 	
 	@Column(name="user_id")
@@ -37,7 +38,6 @@ public class Account {
     
     public Account() {
         super();
-        // TODO Auto-generated constructor stub
     }
     
     public Account(int user_id, String first_name, String last_name, String username, String password, String email) {

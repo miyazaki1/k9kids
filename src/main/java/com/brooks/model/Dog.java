@@ -2,18 +2,16 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="DOG")
 public class Dog {
 	
-	//make foreign key to account
-	@Column(name="username")
+	@ManyToOne
+	@JoinColumn(name="username", referencedColumnName= "username")
 	String username;
 	
 	@Column(name="breed_id")
@@ -21,7 +19,6 @@ public class Dog {
 
 	public Dog() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Dog(String username, Long breed_id) {

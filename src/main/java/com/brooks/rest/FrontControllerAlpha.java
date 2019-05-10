@@ -51,7 +51,7 @@ public class FrontControllerAlpha implements FrontController {
 	}
 
 	@GetMapping("/get/{username}")
-	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username, Account account){
+	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username, @RequestBody Account account){
 		Account findAcc = accountService.getAccountByUsername(username);
 		if(findAcc != null) {
 			return new ResponseEntity<>(findAcc, HttpStatus.OK);
