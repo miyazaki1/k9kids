@@ -51,8 +51,6 @@ public class AccountRepositoryHibernate implements AccountRepository{
 		}
 	}
 	
-	
-	
 	@Override
 	public void createAccount(Account account) {
 		sessionFactory.getCurrentSession().save(account);

@@ -2,24 +2,32 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="DOG")
+@Table(name="MASTER.DOG")
 public class Dog {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="dogSequence")
-	@SequenceGenerator(name="dogSequence", sequenceName="DOG_SEQ", allocationSize=1)
-	@Column(name="username")
-	private String username;
+	//@ManyToMany
+	@JoinColumn(name="username", referencedColumnName= "username")
+	String username;
 	
 	@Column(name="breed")
-	private int breed;
+	Long breed_id;
+
+	public Dog() {
+		super();
+	}
+
+	public Dog(String username, Long breed_id) {
+		super();
+		this.username = username;
+		this.breed_id = breed_id;
+	}
 
 	public String getUsername() {
 		return username;
@@ -29,29 +37,50 @@ public class Dog {
 		this.username = username;
 	}
 
-	public int getBreed() {
-		return breed;
+	public Long getBreed_id() {
+		return breed_id;
 	}
 
-	public void setBreed(int breed) {
-		this.breed = breed;
+	public void setBreed_id(Long breed_id) {
+		this.breed_id = breed_id;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((breed_id == null) ? 0 : breed_id.hashCode());
+		result = prime * result + ((username == null) ? 0 : username.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Dog other = (Dog) obj;
+		if (breed_id == null) {
+			if (other.breed_id != null)
+				return false;
+		} else if (!breed_id.equals(other.breed_id))
+			return false;
+		if (username == null) {
+			if (other.username != null)
+				return false;
+		} else if (!username.equals(other.username))
+			return false;
+		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Dog [username=" + username + ", breed=" + breed + "]";
-	}
-
-	public Dog(String username, int breed) {
-		super();
-		this.username = username;
-		this.breed = breed;
-	}
-
-	public Dog() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
+		return "Dog [username=" + username + ", breed_id=" + breed_id + "]";
+	} 
+	
+	
 	
 }
