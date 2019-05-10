@@ -2,19 +2,21 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="DOG")
+@Table(name="MASTER.DOG")
 public class Dog {
 	
-	@ManyToOne
+	@Id
+	//@ManyToMany
 	@JoinColumn(name="username", referencedColumnName= "username")
 	String username;
 	
-	@Column(name="breed_id")
+	@Column(name="breed")
 	Long breed_id;
 
 	public Dog() {
