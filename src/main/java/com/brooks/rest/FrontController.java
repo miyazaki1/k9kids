@@ -2,6 +2,8 @@ package com.brooks.rest;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.http.ResponseEntity;
 
 import com.brooks.ajax.ClientMessage;
@@ -11,14 +13,14 @@ import com.brooks.model.Dog;
 public interface FrontController {
 
 	List<Account> getAllAccounts();
-	ResponseEntity<Account> getAccountByUsername(String username, Account account);
+	ResponseEntity<Account> getAccountByUsername(Account account, HttpServletRequest request);
 	ResponseEntity<ClientMessage> createAccount(Account account);
 	ResponseEntity<ClientMessage> updateAccount(String username, Account account);
-	ResponseEntity<ClientMessage> deleteAccount(String username);
+	ResponseEntity<ClientMessage> deleteAccount(Account account);
 	
 	List<Dog> getAllDogs();
-	ResponseEntity<Dog> getDogByUsername(String username, Dog dog);
-	ResponseEntity<ClientMessage> createDog(Dog dog);
-	ResponseEntity<ClientMessage> updateDog(String username, Dog dog);
-	ResponseEntity<ClientMessage> deleteDog(String username);
+	Dog getDogByBreed(Dog dog);
+	void createDog(Dog dog);
+	Dog updateDog(Dog dog);
+	void deleteDog(Dog dog);
 }
