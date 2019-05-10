@@ -2,3 +2,985 @@
 2019-05-04 17:50:22 TRACE FrontControllerAlpha:52 - Looking for account by username Brooks
 2019-05-04 18:19:15 TRACE FrontControllerAlpha:64 - Looking for account by username Brooks
 2019-05-04 18:19:33 TRACE FrontControllerAlpha:64 - Looking for account by username Brooks
+2019-05-09 21:38:12 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:38:12 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:38:12 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/revature/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/]]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature\applicationcontext] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature\applicationcontext\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:12 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/revature/**/*.class] to resources []
+2019-05-09 21:38:12 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:12 EDT 2019]; root of context hierarchy
+2019-05-09 21:38:12 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.beans.factory.support.DefaultListableBeanFactory@7d94beb9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:12 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:12 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:13 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@74589991]
+2019-05-09 21:38:13 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@416c58f5]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d94beb9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:13 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Properties
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2019-05-09 21:38:13 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2019-05-09 21:38:13 DEBUG AnnotationConfigApplicationContext:785 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@73194df]
+2019-05-09 21:38:13 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2019-05-09 21:38:13 TRACE AnnotationConfigApplicationContext:373 - Publishing event in org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:12 EDT 2019]; root of context hierarchy]
+2019-05-09 21:38:13 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2019-05-09 21:38:13 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2019-05-09 21:38:13 DEBUG PropertySourcesPropertyResolver:91 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2019-05-09 21:38:20 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:38:20 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:38:20 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/revature/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/]]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature\applicationcontext] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\revature\applicationcontext\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/revature/**/*.class]
+2019-05-09 21:38:20 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/revature/**/*.class] to resources []
+2019-05-09 21:38:20 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:20 EDT 2019]; root of context hierarchy
+2019-05-09 21:38:20 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.beans.factory.support.DefaultListableBeanFactory@7d94beb9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:20 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@74589991]
+2019-05-09 21:38:20 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@416c58f5]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d94beb9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:20 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Properties
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2019-05-09 21:38:20 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2019-05-09 21:38:20 DEBUG AnnotationConfigApplicationContext:785 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@73194df]
+2019-05-09 21:38:20 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2019-05-09 21:38:20 TRACE AnnotationConfigApplicationContext:373 - Publishing event in org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:20 EDT 2019]; root of context hierarchy]
+2019-05-09 21:38:20 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2019-05-09 21:38:20 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2019-05-09 21:38:20 DEBUG PropertySourcesPropertyResolver:91 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2019-05-09 21:38:54 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:38:54 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:38:54 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:38:54 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/util/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/util/]]
+2019-05-09 21:38:54 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util]
+2019-05-09 21:38:54 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/util/**/*.class]
+2019-05-09 21:38:54 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/util/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]]
+2019-05-09 21:38:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:38:55 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:38:55 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:55 EDT 2019]; root of context hierarchy
+2019-05-09 21:38:55 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.beans.factory.support.DefaultListableBeanFactory@28d18df5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:55 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7f0d96f2]
+2019-05-09 21:38:55 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3f9342d4]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28d18df5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:38:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Properties
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2019-05-09 21:38:55 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2019-05-09 21:38:55 DEBUG AnnotationConfigApplicationContext:785 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5a18cd76]
+2019-05-09 21:38:55 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2019-05-09 21:38:55 TRACE AnnotationConfigApplicationContext:373 - Publishing event in org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:38:55 EDT 2019]; root of context hierarchy]
+2019-05-09 21:38:55 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2019-05-09 21:38:55 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2019-05-09 21:38:55 DEBUG PropertySourcesPropertyResolver:91 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2019-05-09 21:39:45 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:39:45 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:39:45 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/]]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:39:45 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$1.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting$2.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:39:45 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:39:45 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:39:45 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: startup date [Thu May 09 21:39:45 EDT 2019]; root of context hierarchy
+2019-05-09 21:39:45 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@1033576a: org.springframework.beans.factory.support.DefaultListableBeanFactory@74a6f9c1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController]; root of factory hierarchy
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:39:45 DEBUG ConfigurationClassBeanDefinitionReader:257 - Registering bean definition for @Bean method com.brooks.service.WebConfig.restTemplate()
+2019-05-09 21:39:45 DEBUG ConfigurationClassEnhancer:112 - Successfully enhanced com.brooks.service.WebConfig; enhanced class name is: com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$f32895ab
+2019-05-09 21:39:45 DEBUG ConfigurationClassPostProcessor:396 - Replacing bean definition 'webConfig' existing class 'com.brooks.service.WebConfig' with enhanced class 'com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$f32895ab'
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:39:45 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:39:45 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:39:45 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:39:45 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:39:45 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1951b871]
+2019-05-09 21:39:46 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@765f05af]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74a6f9c1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'accountRepository'
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'accountRepository'
+2019-05-09 21:39:46 DEBUG InjectionMetadata:72 - Registered injected element on class [com.brooks.repository.AccountRepositoryHibernate]: AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.AccountRepositoryHibernate.sessionFactory
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'accountRepository' to allow for resolving potential circular references
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'allAccounts' of type [java.util.List]
+2019-05-09 21:39:46 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:39:46 DEBUG InjectionMetadata:86 - Processing injected element of bean 'accountRepository': AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.AccountRepositoryHibernate.sessionFactory
+2019-05-09 21:39:46 WARN  AnnotationConfigApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountRepository': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hibernate.SessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-05-09 21:39:46 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74a6f9c1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-09 21:40:18 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:40:18 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:40:18 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/]]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:40:18 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:40:18 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:40:18 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:40:18 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:40:18 EDT 2019]; root of context hierarchy
+2019-05-09 21:40:18 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController]; root of factory hierarchy
+2019-05-09 21:40:18 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:40:18 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:40:18 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:40:18 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG ConfigurationClassBeanDefinitionReader:257 - Registering bean definition for @Bean method com.brooks.service.WebConfig.restTemplate()
+2019-05-09 21:40:19 DEBUG ConfigurationClassEnhancer:112 - Successfully enhanced com.brooks.service.WebConfig; enhanced class name is: com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$b5dd1b08
+2019-05-09 21:40:19 DEBUG ConfigurationClassPostProcessor:396 - Replacing bean definition 'webConfig' existing class 'com.brooks.service.WebConfig' with enhanced class 'com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$b5dd1b08'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@60f00693]
+2019-05-09 21:40:19 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@782859e]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'accountRepository'
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'accountRepository'
+2019-05-09 21:40:19 DEBUG InjectionMetadata:72 - Registered injected element on class [com.brooks.repository.AccountRepositoryHibernate]: AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.AccountRepositoryHibernate.sessionFactory
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'accountRepository' to allow for resolving potential circular references
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'allAccounts' of type [java.util.List]
+2019-05-09 21:40:19 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:40:19 DEBUG InjectionMetadata:86 - Processing injected element of bean 'accountRepository': AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.AccountRepositoryHibernate.sessionFactory
+2019-05-09 21:40:19 WARN  AnnotationConfigApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountRepository': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hibernate.SessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-05-09 21:40:19 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-09 21:42:15 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:42:15 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:42:15 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:42:15 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/main/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/main/]]
+2019-05-09 21:42:15 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main]
+2019-05-09 21:42:15 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/main/**/*.class]
+2019-05-09 21:42:15 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/main/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:15 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:15 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:42:15 EDT 2019]; root of context hierarchy
+2019-05-09 21:42:15 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.beans.factory.support.DefaultListableBeanFactory@39529185: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:15 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@424e1977]
+2019-05-09 21:42:15 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@683dbc2c]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@39529185: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:15 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Properties
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2019-05-09 21:42:15 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2019-05-09 21:42:15 DEBUG AnnotationConfigApplicationContext:785 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@72cde7cc]
+2019-05-09 21:42:15 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2019-05-09 21:42:15 TRACE AnnotationConfigApplicationContext:373 - Publishing event in org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:42:15 EDT 2019]; root of context hierarchy]
+2019-05-09 21:42:15 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2019-05-09 21:42:15 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2019-05-09 21:42:15 DEBUG PropertySourcesPropertyResolver:91 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2019-05-09 21:42:23 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:42:23 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:42:23 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:42:23 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/main/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/main/]]
+2019-05-09 21:42:23 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main]
+2019-05-09 21:42:23 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/main/**/*.class]
+2019-05-09 21:42:23 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/main/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:23 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:23 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:42:23 EDT 2019]; root of context hierarchy
+2019-05-09 21:42:23 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.beans.factory.support.DefaultListableBeanFactory@39529185: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:23 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:23 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:42:23 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:23 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:23 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@424e1977]
+2019-05-09 21:42:24 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@683dbc2c]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@39529185: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory]; root of factory hierarchy
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:24 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.annotation.ConfigurationClassPostProcessor
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.EventListenerMethodProcessor
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.DefaultEventListenerFactory
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.core.env.StandardEnvironment
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Properties
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: java.util.Collections$UnmodifiableMap
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.support.DelegatingMessageSource
+2019-05-09 21:42:24 TRACE EventListenerMethodProcessor:148 - No @EventListener annotations found on bean class: org.springframework.context.event.SimpleApplicationEventMulticaster
+2019-05-09 21:42:24 DEBUG AnnotationConfigApplicationContext:785 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@72cde7cc]
+2019-05-09 21:42:24 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2019-05-09 21:42:24 TRACE AnnotationConfigApplicationContext:373 - Publishing event in org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:42:23 EDT 2019]; root of context hierarchy]
+2019-05-09 21:42:24 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2019-05-09 21:42:24 TRACE PropertySourcesPropertyResolver:78 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2019-05-09 21:42:24 DEBUG PropertySourcesPropertyResolver:91 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2019-05-09 21:42:31 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-09 21:42:31 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-09 21:42:31 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/]]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/**/*.class]
+2019-05-09 21:42:31 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\ajax\ClientMessage.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$1.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main$2.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\main\Main.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\ClientMessageUtil.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\util\UnitTesting.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-09 21:42:31 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:42:31 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-09 21:42:31 INFO  AnnotationConfigApplicationContext:583 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: startup date [Thu May 09 21:42:31 EDT 2019]; root of context hierarchy
+2019-05-09 21:42:31 DEBUG AnnotationConfigApplicationContext:617 - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@2f490758: org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController]; root of factory hierarchy
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG ConfigurationClassBeanDefinitionReader:257 - Registering bean definition for @Bean method com.brooks.service.WebConfig.restTemplate()
+2019-05-09 21:42:31 DEBUG ConfigurationClassEnhancer:112 - Successfully enhanced com.brooks.service.WebConfig; enhanced class name is: com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$b5dd1b08
+2019-05-09 21:42:31 DEBUG ConfigurationClassPostProcessor:396 - Replacing bean definition 'webConfig' existing class 'com.brooks.service.WebConfig' with enhanced class 'com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$b5dd1b08'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG AnnotationConfigApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@60f00693]
+2019-05-09 21:42:31 DEBUG AnnotationConfigApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@782859e]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.EventListenerMethodProcessor]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.context.event.DefaultEventListenerFactory]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'accountRepository'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'accountRepository'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'accountRepository' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [com.brooks.repository.AccountRepositoryHibernate]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'allAccounts' of type [java.util.List]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'accountRepository'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'dogRepository'
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dogRepository'
+2019-05-09 21:42:31 DEBUG InjectionMetadata:72 - Registered injected element on class [com.brooks.repository.DogRepositoryHibernate]: AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.DogRepositoryHibernate.sessionFactory
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'dogRepository' to allow for resolving potential circular references
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [com.brooks.repository.DogRepositoryHibernate]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [com.brooks.repository.DogRepositoryHibernate]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'allDogs' of type [java.util.List]
+2019-05-09 21:42:31 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-09 21:42:31 DEBUG InjectionMetadata:86 - Processing injected element of bean 'dogRepository': AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.DogRepositoryHibernate.sessionFactory
+2019-05-09 21:42:31 WARN  AnnotationConfigApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dogRepository': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hibernate.SessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-05-09 21:42:31 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c730b35: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
