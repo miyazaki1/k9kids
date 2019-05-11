@@ -8,7 +8,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="MASTER.DOG")
+@Table(name="XIO.DOG")
 public class Dog {
 	
 	@Id

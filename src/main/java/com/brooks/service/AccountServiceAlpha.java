@@ -51,17 +51,13 @@ public class AccountServiceAlpha implements AccountService{
 	}
 
 	@Override
-	public Account updateAccount(Account account) {
-		account.setFirst_name(account.getFirst_name());
-		account.setLast_name(account.getLast_name());
-		account.setEmail(account.getEmail());
-		account.setPassword(account.getPassword());
-		return accountRepository.updateAccount(account);
+	public void updateAccount(String username, Account account) {
+		accountRepository.updateAccount(username, account);
 	}
 
 	@Override
-	public void deleteAccount(Account account) {
-		accountRepository.deleteAccount(account);
+	public void deleteAccount(String username) {
+		accountRepository.deleteAccount(username);
 	}
 
 }
