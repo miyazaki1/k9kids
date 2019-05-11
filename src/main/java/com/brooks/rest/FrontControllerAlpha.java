@@ -102,7 +102,7 @@ public class FrontControllerAlpha implements FrontController {
 		// logger.trace("Looking for account by username " + account.getUsername());
 		Account foundAcc = accountService.validateAccountLogin(account.getUsername(), account.getPassword());
 	
-		if (foundAcc != null) {
+		if (foundAcc != null && account.getUsername() != "") {
 			foundAcc.setPassword("");
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
 		} else {

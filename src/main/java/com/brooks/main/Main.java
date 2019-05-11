@@ -18,18 +18,16 @@ import com.brooks.service.DogService;
 
 public class Main {
 	public static Logger logger = Logger.getLogger(Main.class);
-	
+
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 //		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 //	
 //		DogService dogService = context.getBean("dogService", DogService.class);
 //		AccountService accountService = context.getBean("accountService", AccountService.class);
-		
-		//accountService.createAccount(new Account(0, "test", "testing", "ttesing", "pass123", "test@test.com"));
-		
-		//logger.trace(accountService.getAllAccounts());
 
-
+//		accountService.createAccount(new Account(0, "test", "testing", "ttesing", "pass123", "test@test.com"));
+//
+//		logger.trace(accountService.getAllAccounts());
 	}
 }

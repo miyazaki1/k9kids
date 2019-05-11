@@ -33,14 +33,38 @@ public class AccountRepositoryHibernate implements AccountRepository{
 	
 	@Override
 	public Account validateAccountLogin(String username, String password) {
-		try {			
-			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
+		if (username == null || username == "") {
+			return null;
+		}
+		
+		try {		
+			
+			Session session = sessionFactory.getCurrentSession();
+			
+			Account account = (Account) session.createCriteria(Account.class, username)
 					.add(Restrictions.like("username", username)).add(Restrictions.like("password", password))
 					.list()
 					.get(0);
+			
+						
+			session.beginTransaction();
+			session.getTransaction().commit();
+			
+			return account;
 		}
 		catch (IndexOutOfBoundsException e) {
 			return null;
+		}
+		// To catch the sessionFactory.getCurrentSession().beginTransaction()
+		catch (Exception e) {
+			
+			System.out.println("Exception when tying to beginTransaction to create a user session, opening a new session");
+			sessionFactory.openSession();
+			
+			return (Account) sessionFactory.getCurrentSession().createCriteria(Account.class, username)
+					.add(Restrictions.like("username", username)).add(Restrictions.like("password", password))
+					.list()
+					.get(0);			
 		}
 	}
 	
@@ -66,6 +90,4 @@ public class AccountRepositoryHibernate implements AccountRepository{
 		Account a = (Account) session.byId(Account.class).load(username);
 		session.delete(a);
 	}
-
-
 }
