@@ -40,7 +40,7 @@ public class DogRepositoryHibernate implements DogRepository{
 	public void updateDog(String username, Dog dog) {
 		Session session = sessionFactory.getCurrentSession();
 		Dog d = (Dog) session.byId(Dog.class).load(username);
-		d.setBreed(d.getBreed());
+		//d.setBreed(d.getBreed());
 	}
 
 	@Override

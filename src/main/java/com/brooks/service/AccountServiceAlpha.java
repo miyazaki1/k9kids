@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.brooks.model.Account;
+import com.brooks.model.Dog;
 import com.brooks.repository.AccountRepository;
 
 @Service("accountService")
@@ -58,6 +59,17 @@ public class AccountServiceAlpha implements AccountService{
 	@Override
 	public void deleteAccount(String username) {
 		accountRepository.deleteAccount(username);
+	}
+
+	@Override
+	public void addPreferencesToUser(List<Dog> dogs, Account account) {
+		accountRepository.addPreferencesToUser(dogs, account);
+	}
+
+	@Override
+	public Account addPreference(String username, int breed_id) {
+		
+		return accountRepository.addPreference(username, breed_id);
 	}
 
 }

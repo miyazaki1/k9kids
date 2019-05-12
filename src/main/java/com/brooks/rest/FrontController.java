@@ -3,6 +3,7 @@ package com.brooks.rest;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
@@ -11,11 +12,12 @@ import com.brooks.model.Dog;
 public interface FrontController {
 
 	List<Account> getAllAccounts();
-	ResponseEntity<Account> getAccountByUsername(String username, Account account);
+	ResponseEntity<Account> getAccountByUsername(String username);
 	ResponseEntity<ClientMessage> createAccount(Account account);
 	ResponseEntity<ClientMessage> updateAccount(String username, Account account);
 	ResponseEntity<ClientMessage> deleteAccount(String username);
-	
+	ResponseEntity<ClientMessage> addPreference(String username, int breed_id );
+
 	List<Dog> getAllDogs();
 	ResponseEntity<Dog> getDogByUsername(String username, Dog dog);
 	ResponseEntity<ClientMessage> createDog(Dog dog);

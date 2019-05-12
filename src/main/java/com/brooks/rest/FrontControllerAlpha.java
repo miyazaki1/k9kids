@@ -51,7 +51,7 @@ public class FrontControllerAlpha implements FrontController {
 	}
 
 	@GetMapping("/get/{username}")
-	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username, @RequestBody Account account){
+	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username){
 		Account findAcc = accountService.getAccountByUsername(username);
 		if(findAcc != null) {
 			return new ResponseEntity<>(findAcc, HttpStatus.OK);
@@ -92,6 +92,17 @@ public class FrontControllerAlpha implements FrontController {
 			return new ResponseEntity<>(HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@Override
+	@PostMapping("/addPreference/{username}/{breed_id}")
+	public ResponseEntity<ClientMessage> addPreference(@PathVariable("username") String username, @PathVariable("breed_id") int breed_id ) {
+		Account foundAcc = accountService.addPreference(username, breed_id);
+		if(foundAcc != null) {
+			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<>(UPDATE_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
 		}
 	}
 

@@ -2344,3 +2344,791 @@
 2019-05-09 23:03:22 DEBUG InjectionMetadata:86 - Processing injected element of bean 'accountRepository': AutowiredFieldElement for private org.hibernate.SessionFactory com.brooks.repository.AccountRepositoryHibernate.sessionFactory
 2019-05-09 23:03:22 WARN  AnnotationConfigApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountRepository': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hibernate.SessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 2019-05-09 23:03:22 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@74a6f9c1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,frontController,accountService,dogService,webConfig,ViewController,restTemplate]; root of factory hierarchy
+2019-05-11 16:24:32 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-11 16:24:32 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-11 16:24:32 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-11 16:24:32 INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4e4aea35: startup date [Sat May 11 16:24:32 EDT 2019]; root of context hierarchy
+2019-05-11 16:24:32 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-11 16:24:32 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-11 16:24:32 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-11 16:24:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.html]
+2019-05-11 17:25:51 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-11 17:25:51 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-11 17:25:51 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-11 17:25:51 INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:25:52 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2019-05-11 17:25:52 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2019-05-11 17:25:52 DEBUG StandardEnvironment:124 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2019-05-11 17:25:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-05-11 17:25:52 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2019-05-11 17:25:52 TRACE PluggableSchemaResolver:106 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/beans/spring-beans-4.2.xsd]
+2019-05-11 17:25:52 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+2019-05-11 17:25:52 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd}
+2019-05-11 17:25:52 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2019-05-11 17:25:53 TRACE PluggableSchemaResolver:106 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd]
+2019-05-11 17:25:53 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-4.3.xsd
+2019-05-11 17:25:53 TRACE PluggableSchemaResolver:106 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd]
+2019-05-11 17:25:53 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+2019-05-11 17:25:53 TRACE PluggableSchemaResolver:106 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/tx/spring-tx-4.2.xsd]
+2019-05-11 17:25:53 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-4.2.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.2.xsd
+2019-05-11 17:25:53 TRACE PluggableSchemaResolver:106 - Trying to resolve XML entity with public id [null] and system id [http://www.springframework.org/schema/context/spring-context-4.3.xsd]
+2019-05-11 17:25:53 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.3.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+2019-05-11 17:25:53 DEBUG DefaultBeanDefinitionDocumentReader:92 - Loading bean definitions
+2019-05-11 17:25:53 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler}
+2019-05-11 17:25:53 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/model/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/model/]]
+2019-05-11 17:25:53 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model]
+2019-05-11 17:25:53 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/model/**/*.class]
+2019-05-11 17:25:53 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/model/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Account.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Breed.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Canine.class]
+2019-05-11 17:25:53 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Category.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Dog.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Fact.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Favorite.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Height.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Image.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\ImageShort.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Source.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\model\Weight.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/repository/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/repository/]]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/repository/**/*.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/repository/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepository.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\AccountRepositoryHibernate.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepository.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\repository\DogRepositoryHibernate.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/service/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/service/]]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/service/**/*.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/service/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountService.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\AccountServiceAlpha.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogService.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\DogServiceAlpha.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\service\WebConfig.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/view/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/view/]]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/view/**/*.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/view/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewController.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\view\ViewControllerAlpha.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:318 - Resolved classpath location [com/brooks/rest/] to resources [URL [file:/E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/rest/]]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:713 - Looking for matching resources in directory tree [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:775 - Searching directory [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest] for files matching pattern [E:/eclipse-workspace/API_Extension/k9kids/target/classes/com/brooks/rest/**/*.class]
+2019-05-11 17:25:54 DEBUG PathMatchingResourcePatternResolver:482 - Resolved location pattern [classpath*:com/brooks/rest/**/*.class] to resources [file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class], file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:306 - Ignored because not matching any filter: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontController.class]
+2019-05-11 17:25:54 TRACE ClassPathBeanDefinitionScanner:283 - Scanning file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-11 17:25:54 DEBUG ClassPathBeanDefinitionScanner:294 - Identified candidate component class: file [E:\eclipse-workspace\API_Extension\k9kids\target\classes\com\brooks\rest\FrontControllerAlpha.class]
+2019-05-11 17:25:54 DEBUG BeanDefinitionParserDelegate:451 - No XML 'id' specified - using 'dataSource' as bean name and [] as aliases
+2019-05-11 17:25:54 DEBUG BeanDefinitionParserDelegate:451 - No XML 'id' specified - using 'sessionFactory' as bean name and [] as aliases
+2019-05-11 17:25:54 DEBUG BeanDefinitionParserDelegate:451 - No XML 'id' specified - using 'transactionManager' as bean name and [] as aliases
+2019-05-11 17:25:54 DEBUG XmlBeanDefinitionReader:224 - Loaded 40 bean definitions from location pattern [applicationContext.xml]
+2019-05-11 17:25:54 DEBUG ClassPathXmlApplicationContext:617 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: org.springframework.beans.factory.support.DefaultListableBeanFactory@e521067: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,accountService,dogService,webConfig,ViewController,frontController,dataSource,sessionFactory,transactionManager]; root of factory hierarchy
+2019-05-11 17:25:54 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-11 17:25:54 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-11 17:25:54 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2019-05-11 17:25:54 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG ConfigurationClassBeanDefinitionReader:257 - Registering bean definition for @Bean method com.brooks.service.WebConfig.restTemplate()
+2019-05-11 17:25:55 DEBUG ConfigurationClassEnhancer:112 - Successfully enhanced com.brooks.service.WebConfig; enhanced class name is: com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$f132856d
+2019-05-11 17:25:55 DEBUG ConfigurationClassPostProcessor:396 - Replacing bean definition 'webConfig' existing class 'com.brooks.service.WebConfig' with enhanced class 'com.brooks.service.WebConfig$$EnhancerBySpringCGLIB$$f132856d'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-11 17:25:55 TRACE SpringFactoriesLoader:89 - Loaded [org.springframework.beans.BeanInfoFactory] names: [org.springframework.beans.ExtendedBeanInfoFactory]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationType' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'autowiredAnnotationTypes' of type [java.util.Set]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterName' of type [java.lang.String]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredParameterValue' of type [boolean]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'requiredAnnotationType' of type [java.lang.Class]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultPersistenceUnitName' of type [java.lang.String]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'extendedPersistenceContexts' of type [java.util.Map]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiEnvironment' of type [java.util.Properties]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'jndiTemplate' of type [java.lang.Object]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceContexts' of type [java.util.Map]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'persistenceUnits' of type [java.util.Map]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRef' of type [boolean]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'advisorAdapterRegistry' of type [org.springframework.aop.framework.adapter.AdvisorAdapterRegistry]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'applyCommonInterceptorsFirst' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanClassLoader' of type [java.lang.ClassLoader]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'customTargetSourceCreators' of type [[Lorg.springframework.aop.framework.autoproxy.TargetSourceCreator;]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'exposeProxy' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'frozen' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'interceptorNames' of type [[Ljava.lang.String;]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'opaque' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'optimize' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'proxyClassLoader' of type [java.lang.ClassLoader]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'proxyTargetClass' of type [boolean]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-05-11 17:25:55 DEBUG ClassPathXmlApplicationContext:734 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6ddbbfbb]
+2019-05-11 17:25:55 DEBUG ClassPathXmlApplicationContext:758 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@10f384a2]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:730 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e521067: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,accountService,dogService,webConfig,ViewController,frontController,dataSource,sessionFactory,transactionManager,restTemplate]; root of factory hierarchy
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'mvcContentNegotiationManager'
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultContentType' of type [org.springframework.http.MediaType]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultContentTypeStrategy' of type [org.springframework.web.accept.ContentNegotiationStrategy]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'favorParameter' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'favorPathExtension' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'ignoreAcceptHeader' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'ignoreUnknownPathExtensions' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'mediaTypes' of type [java.util.Properties]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'object' of type [org.springframework.web.accept.ContentNegotiationManager]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'objectType' of type [java.lang.Class]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'parameterName' of type [java.lang.String]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'singleton' of type [boolean]
+2019-05-11 17:25:55 TRACE CachedIntrospectionResults:297 - Found bean property 'useJaf' of type [boolean]
+2019-05-11 17:25:55 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 TRACE InfrastructureAdvisorAutoProxyCreator:377 - Did not attempt to auto-proxy infrastructure class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'advice' of type [org.aopalliance.aop.Advice]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'adviceBeanName' of type [java.lang.String]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'classFilter' of type [org.springframework.aop.ClassFilter]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'perInstance' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'pointcut' of type [org.springframework.aop.Pointcut]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'transactionAttributeSource' of type [org.springframework.transaction.interceptor.TransactionAttributeSource]
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.transaction.annotation.AnnotationTransactionAttributeSource]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.transaction.annotation.AnnotationTransactionAttributeSource]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:56 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'mvcContentNegotiationManager'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping' to allow for resolving potential circular references
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'alwaysUseFullPath' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'corsConfigurations' of type [java.util.Map]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'corsProcessor' of type [org.springframework.web.cors.CorsProcessor]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultHandler' of type [java.lang.Object]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'detectHandlerMethodsInAncestorContexts' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'embeddedValueResolver' of type [org.springframework.util.StringValueResolver]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'fileExtensions' of type [java.util.List]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerMethodMappingNamingStrategy' of type [org.springframework.web.servlet.handler.HandlerMethodMappingNamingStrategy]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerMethods' of type [java.util.Map]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'interceptors' of type [[Ljava.lang.Object;]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'namingStrategy' of type [org.springframework.web.servlet.handler.HandlerMethodMappingNamingStrategy]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'removeSemicolonContent' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'urlDecode' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'useRegisteredSuffixPatternMatch' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'useSuffixPatternMatch' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'useTrailingSlashMatch' of type [boolean]
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'mvcCorsConfigurations'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'mvcCorsConfigurations' to allow for resolving potential circular references
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [java.util.LinkedHashMap]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [java.util.LinkedHashMap]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'empty' of type [boolean]
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'mvcCorsConfigurations'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5a08d301'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.format.support.FormattingConversionServiceFactoryBean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'converters' of type [java.util.Set]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'embeddedValueResolver' of type [org.springframework.util.StringValueResolver]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'formatterRegistrars' of type [java.util.Set]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'formatters' of type [java.util.Set]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'object' of type [org.springframework.format.support.FormattingConversionService]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'objectType' of type [java.lang.Class]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'registerDefaultFormatters' of type [boolean]
+2019-05-11 17:25:56 TRACE CachedIntrospectionResults:297 - Found bean property 'singleton' of type [boolean]
+2019-05-11 17:25:56 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:25:57 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:57 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:25:57 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:57 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+2019-05-11 17:25:57 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor]
+2019-05-11 17:25:57 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:57 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:57 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5a08d301'
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [[Ljava.lang.String;]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'java.lang.String[]'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'java.lang.String': no matching editors or conversion strategy found
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],java.lang.String[],org.springframework.web.servlet.HandlerInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [[Ljava.lang.String;]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'java.lang.String[]'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'java.lang.String': no matching editors or conversion strategy found
+2019-05-11 17:25:58 DEBUG BeanUtils:450 - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#0': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor': no matching editors or conversion strategy found
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.handler.MappedInterceptor]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.MappedInterceptor]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'interceptor' of type [org.springframework.web.servlet.HandlerInterceptor]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'pathPatterns' of type [[Ljava.lang.String;]
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#27f4761b'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#2bb118ae'
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.resource.ResourceUrlProvider]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.resource.ResourceUrlProvider]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'autodetect' of type [boolean]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerMap' of type [java.util.Map]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'pathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#2bb118ae'
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor]
+2019-05-11 17:25:58 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#27f4761b'
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor] to required type [[Ljava.lang.String;]: Failed to convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'java.lang.String[]'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'java.lang.String': no matching editors or conversion strategy found
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],java.lang.String[],org.springframework.web.servlet.HandlerInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor] to required type [[Ljava.lang.String;]: Failed to convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'java.lang.String[]'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'java.lang.String': no matching editors or conversion strategy found
+2019-05-11 17:25:58 TRACE DefaultListableBeanFactory:194 - Ignoring constructor [public org.springframework.web.servlet.handler.MappedInterceptor(java.lang.String[],org.springframework.web.context.request.WebRequestInterceptor)] of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1': org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Unsatisfied dependency expressed through constructor parameter 1: Could not convert argument value of type [org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor] to required type [org.springframework.web.context.request.WebRequestInterceptor]: Failed to convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor' to required type 'org.springframework.web.context.request.WebRequestInterceptor': no matching editors or conversion strategy found
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#1' to allow for resolving potential circular references
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-05-11 17:25:58 DEBUG RequestMappingHandlerMapping:195 - Looking for request mappings in application context: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:25:58 DEBUG RequestMappingHandlerMapping:245 - 1 request handler methods found on class com.brooks.view.ViewControllerAlpha: {public java.lang.String com.brooks.view.ViewControllerAlpha.index()={[/index],methods=[GET]}}
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.brooks.view.ViewControllerAlpha.index()
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'VCA#index'
+2019-05-11 17:25:58 DEBUG RequestMappingHandlerMapping:245 - 11 request handler methods found on class com.brooks.rest.FrontControllerAlpha: {public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.getAccountByUsername(java.lang.String)={[/account/get/{username}],methods=[GET],produces=[application/json]}, public java.util.List com.brooks.rest.FrontControllerAlpha.getAllAccounts()={[/account/all],methods=[GET],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.deleteAccount(java.lang.String)={[/account/delete/{username}],methods=[DELETE],produces=[application/json]}, public java.util.List com.brooks.rest.FrontControllerAlpha.getAllDogs()={[/account/allDogs],methods=[GET],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.updateAccount(java.lang.String,com.brooks.model.Account)={[/account/update/{username}],methods=[PUT],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.getDogByUsername(java.lang.String,com.brooks.model.Dog)={[/account/getDog/{username}],methods=[GET],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.createDog(com.brooks.model.Dog)={[/account/createDog],methods=[POST],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.createAccount(com.brooks.model.Account)={[/account/create],methods=[POST],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.updateDog(java.lang.String,com.brooks.model.Dog)={[/account/updateDog/{username}],methods=[PUT],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.deleteDog(java.lang.String)={[/account/deleteDog/{username}],methods=[DELETE],produces=[application/json]}, public org.springframework.http.ResponseEntity com.brooks.rest.FrontControllerAlpha.loginUser(com.brooks.model.Account,javax.servlet.http.HttpServletRequest)={[/account/login],methods=[POST],produces=[application/json]}}
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/get/{username}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.model.Account> com.brooks.rest.FrontControllerAlpha.getAccountByUsername(java.lang.String)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#getAccountByUsername'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/all],methods=[GET],produces=[application/json]}" onto public java.util.List<com.brooks.model.Account> com.brooks.rest.FrontControllerAlpha.getAllAccounts()
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#getAllAccounts'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/delete/{username}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.deleteAccount(java.lang.String)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#deleteAccount'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/allDogs],methods=[GET],produces=[application/json]}" onto public java.util.List<com.brooks.model.Dog> com.brooks.rest.FrontControllerAlpha.getAllDogs()
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#getAllDogs'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/update/{username}],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.updateAccount(java.lang.String,com.brooks.model.Account)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#updateAccount'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/getDog/{username}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.model.Dog> com.brooks.rest.FrontControllerAlpha.getDogByUsername(java.lang.String,com.brooks.model.Dog)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#getDogByUsername'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/createDog],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.createDog(com.brooks.model.Dog)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#createDog'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/create],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.createAccount(com.brooks.model.Account)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#createAccount'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/updateDog/{username}],methods=[PUT],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.updateDog(java.lang.String,com.brooks.model.Dog)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#updateDog'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/deleteDog/{username}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.ajax.ClientMessage> com.brooks.rest.FrontControllerAlpha.deleteDog(java.lang.String)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#deleteDog'
+2019-05-11 17:25:58 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/account/login],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.brooks.model.Account> com.brooks.rest.FrontControllerAlpha.loginUser(com.brooks.model.Account,javax.servlet.http.HttpServletRequest)
+2019-05-11 17:25:58 TRACE RequestMappingHandlerMapping:603 - Mapping name 'FCA#loginUser'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2019-05-11 17:25:58 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter' to allow for resolving potential circular references
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'alwaysMustRevalidate' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'argumentResolvers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'asyncRequestTimeout' of type [long]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'beanFactory' of type [org.springframework.beans.factory.BeanFactory]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'cacheControl' of type [org.springframework.http.CacheControl]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'cacheSeconds' of type [int]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'cacheSecondsForSessionAttributeHandlers' of type [int]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'callableInterceptors' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'customArgumentResolvers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'customReturnValueHandlers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'deferredResultInterceptors' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'ignoreDefaultModelOnRedirect' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'initBinderArgumentResolvers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'messageConverters' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'modelAndViewResolvers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'parameterNameDiscoverer' of type [org.springframework.core.ParameterNameDiscoverer]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'requestBodyAdvice' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'requireSession' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'responseBodyAdvice' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'returnValueHandlers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'sessionAttributeStore' of type [org.springframework.web.bind.support.SessionAttributeStore]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMethods' of type [[Ljava.lang.String;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'synchronizeOnSession' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'taskExecutor' of type [org.springframework.core.task.AsyncTaskExecutor]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'useCacheControlHeader' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'useCacheControlNoStore' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'useExpiresHeader' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'varyByRequestHeaders' of type [[Ljava.lang.String;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'webBindingInitializer' of type [org.springframework.web.bind.support.WebBindingInitializer]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#7553ad52'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.bind.support.ConfigurableWebBindingInitializer]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'autoGrowNestedPaths' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'bindingErrorProcessor' of type [org.springframework.validation.BindingErrorProcessor]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'directFieldAccess' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'messageCodesResolver' of type [org.springframework.validation.MessageCodesResolver]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'propertyEditorRegistrar' of type [org.springframework.beans.PropertyEditorRegistrar]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'propertyEditorRegistrars' of type [[Lorg.springframework.beans.PropertyEditorRegistrar;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'validator' of type [org.springframework.validation.Validator]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#7553ad52'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5a96081a'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.ByteArrayHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5a96081a'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#6ca6a1a6'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.StringHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.StringHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'writeAcceptCharset' of type [boolean]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#6ca6a1a6'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#75eed00f'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.ResourceHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#75eed00f'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5513982'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.xml.SourceHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'processExternalEntities' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportDtd' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5513982'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#13258770'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'charset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'multipartCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'partConverters' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#13258770'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#78c7d992'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5f19da2c'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'annotationIntrospector' of type [com.fasterxml.jackson.databind.AnnotationIntrospector]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'autoDetectFields' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'autoDetectGettersSetters' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'beanClassLoader' of type [java.lang.ClassLoader]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'createXmlMapper' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'dateFormat' of type [java.text.DateFormat]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultTyping' of type [com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultUseWrapper' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultViewInclusion' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'deserializers' of type [[Lcom.fasterxml.jackson.databind.JsonDeserializer;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'deserializersByType' of type [java.util.Map]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'failOnEmptyBeans' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'failOnUnknownProperties' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'featuresToDisable' of type [[Ljava.lang.Object;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'featuresToEnable' of type [[Ljava.lang.Object;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'filters' of type [com.fasterxml.jackson.databind.ser.FilterProvider]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'findModulesViaServiceLoader' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerInstantiator' of type [com.fasterxml.jackson.databind.cfg.HandlerInstantiator]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'indentOutput' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'locale' of type [java.util.Locale]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'mixIns' of type [java.util.Map]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'modules' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'modulesToInstall' of type [[Ljava.lang.Class;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'object' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'objectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'objectType' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'propertyNamingStrategy' of type [com.fasterxml.jackson.databind.PropertyNamingStrategy]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'serializationInclusion' of type [com.fasterxml.jackson.annotation.JsonInclude$Include]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'serializers' of type [[Lcom.fasterxml.jackson.databind.JsonSerializer;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'serializersByType' of type [java.util.Map]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'simpleDateFormat' of type [java.lang.String]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'singleton' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'timeZone' of type [java.util.TimeZone]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name '(inner bean)#5f19da2c'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5f19da2c'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultCharset' of type [java.nio.charset.Charset]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'jsonPrefix' of type [java.lang.String]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'objectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'prefixJson' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'prettyPrint' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMediaTypes' of type [java.util.List]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#78c7d992'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#34408f1b'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewRequestBodyAdvice]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewRequestBodyAdvice]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#34408f1b'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#6f798e5a'
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewResponseBodyAdvice]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.JsonViewResponseBodyAdvice]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#6f798e5a'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2019-05-11 17:26:00 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'mvcUriComponentsContributor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'conversionService' of type [org.springframework.core.convert.ConversionService]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerAdapter' of type [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'object' of type [org.springframework.web.method.support.CompositeUriComponentsContributor]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'objectType' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'singleton' of type [boolean]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#17236e87'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#7553ad52#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#7553ad52#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5a96081a#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5a96081a#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#6ca6a1a6#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#6ca6a1a6#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#75eed00f#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#75eed00f#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5513982#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5513982#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#13258770#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#13258770#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#78c7d992#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5f19da2c#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name '(inner bean)#5f19da2c#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5f19da2c#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#78c7d992#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#34408f1b#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#34408f1b#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#6f798e5a#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#6f798e5a#1'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name '(inner bean)#17236e87'
+2019-05-11 17:26:00 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#17236e87'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'mvcUriComponentsContributor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'argumentResolvers' of type [org.springframework.web.method.support.HandlerMethodArgumentResolverComposite]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'customArgumentResolvers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'customReturnValueHandlers' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'exceptionHandlerAdviceCache' of type [java.util.Map]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlers' of type [java.util.Set]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'messageConverters' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'preventResponseCaching' of type [boolean]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'responseBodyAdvice' of type [java.util.List]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'returnValueHandlers' of type [org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite]
+2019-05-11 17:26:00 TRACE CachedIntrospectionResults:297 - Found bean property 'warnLogCategory' of type [java.lang.String]
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5a96081a#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5a96081a#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#6ca6a1a6#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#6ca6a1a6#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#75eed00f#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#75eed00f#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5513982#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5513982#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#13258770#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#13258770#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#78c7d992#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#5f19da2c#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name '(inner bean)#5f19da2c#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#5f19da2c#2'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:00 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#78c7d992#2'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)#4bf9f44b'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean '(inner bean)#4bf9f44b'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG ExceptionHandlerExceptionResolver:262 - Looking for exception mappings: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlers' of type [java.util.Set]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'messageSource' of type [org.springframework.context.MessageSource]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'preventResponseCaching' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'warnLogCategory' of type [java.lang.String]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlerClasses' of type [[Ljava.lang.Class;]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'mappedHandlers' of type [java.util.Set]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'preventResponseCaching' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'warnLogCategory' of type [java.lang.String]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'alwaysUseFullPath' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'corsConfigurations' of type [java.util.Map]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'corsProcessor' of type [org.springframework.web.cors.CorsProcessor]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'defaultHandler' of type [java.lang.Object]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'detectHandlersInAncestorContexts' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'handlerMap' of type [java.util.Map]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'interceptors' of type [[Ljava.lang.Object;]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'lazyInitHandlers' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'order' of type [int]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'pathMatcher' of type [org.springframework.util.PathMatcher]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'removeSemicolonContent' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'rootHandler' of type [java.lang.Object]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'urlDecode' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'urlPathHelper' of type [org.springframework.web.util.UrlPathHelper]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'useTrailingSlashMatch' of type [boolean]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:71 - Looking for URL mappings in application context: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcCorsConfigurations': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcPathMatcher': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'accountRepository': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'dogRepository': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'accountService': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'dogService': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'webConfig': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'ViewController': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'frontController': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'dataSource': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'sessionFactory': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'transactionManager': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'restTemplate': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+2019-05-11 17:26:01 DEBUG BeanNameUrlHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'mvcResourceUrlProvider'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'mvcResourceUrlProvider' to allow for resolving potential circular references
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:485 - Finished creating instance of bean 'mvcResourceUrlProvider'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:539 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:265 - Getting BeanInfo for class [org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:284 - Caching PropertyDescriptors for class [org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'alwaysMustRevalidate' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'applicationContext' of type [org.springframework.context.ApplicationContext]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'cacheControl' of type [org.springframework.http.CacheControl]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'cacheSeconds' of type [int]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'class' of type [java.lang.Class]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'contentNegotiationManager' of type [org.springframework.web.accept.ContentNegotiationManager]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'corsConfiguration' of type [org.springframework.web.cors.CorsConfiguration]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'locations' of type [java.util.List]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'requireSession' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceHttpMessageConverter' of type [org.springframework.http.converter.ResourceHttpMessageConverter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceRegionHttpMessageConverter' of type [org.springframework.http.converter.ResourceRegionHttpMessageConverter]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceResolvers' of type [java.util.List]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'resourceTransformers' of type [java.util.List]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'servletContext' of type [javax.servlet.ServletContext]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'supportedMethods' of type [[Ljava.lang.String;]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'useCacheControlHeader' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'useCacheControlNoStore' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'useExpiresHeader' of type [boolean]
+2019-05-11 17:26:01 TRACE CachedIntrospectionResults:297 - Found bean property 'varyByRequestHeaders' of type [[Ljava.lang.String;]
+2019-05-11 17:26:01 TRACE TypeConverterDelegate:438 - Converting String to [interface org.springframework.core.io.Resource] using property editor [org.springframework.core.io.ResourceEditor@70385eb1]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:1670 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2019-05-11 17:26:01 WARN  ClassPathXmlApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': Invocation of init method failed; nested exception is java.lang.IllegalStateException: WebApplicationObjectSupport instance [ResourceHttpRequestHandler [locations=[class path resource [dist]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5911d6e]]] does not run in a WebApplicationContext but in: org.springframework.context.support.ClassPathXmlApplicationContext@1e0f9063: startup date [Sat May 11 17:25:51 EDT 2019]; root of context hierarchy
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:512 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e521067: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping,mvcCorsConfigurations,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,accountRepository,dogRepository,accountService,dogService,webConfig,ViewController,frontController,dataSource,sessionFactory,transactionManager,restTemplate]; root of factory hierarchy
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:568 - Retrieved dependent beans for bean '(inner bean)#2bb118ae': [(inner bean)#27f4761b]
+2019-05-11 17:26:01 DEBUG DefaultListableBeanFactory:568 - Retrieved dependent beans for bean '(inner bean)#27f4761b': [org.springframework.web.servlet.handler.MappedInterceptor#1]

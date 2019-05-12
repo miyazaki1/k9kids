@@ -32,7 +32,7 @@ public class UnitTesting {
 		//fca.getAccountByUsername(account, req );
 		//logger.trace(account);
 		
-		fca.getAccountByUsername("Brooks", null);
+		fca.getAccountByUsername("Brooks");
 		System.out.println(fca.getAllAccounts().get(0));
 	}
 	

@@ -3,6 +3,7 @@ package com.brooks.service;
 import java.util.List;
 
 import com.brooks.model.Account;
+import com.brooks.model.Dog;
 
 public interface AccountService {
 	List<Account> getAllAccounts();
@@ -11,4 +12,6 @@ public interface AccountService {
 	public void updateAccount(String username, Account account);
 	public void deleteAccount(String username);
 	Account validateAccountLogin(String username, String password);
+	Account addPreference(String username, int breed_id);
+	void addPreferencesToUser(List<Dog> dogs, Account account); 
 }
