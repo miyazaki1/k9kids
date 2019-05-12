@@ -143,6 +143,8 @@ public class FrontControllerAlpha implements FrontController {
 	@PostMapping("/fav/remove")
 	public ResponseEntity<ClientMessage> deleteFavorite(@RequestBody Dog dog) {
 		Account a = accountService.getAccountById(dog.getAccount_id());
+		
+		// Checks to see if there is an actual account that matches with the dog's account id.
 		if(a != null) {
 			dogService.deleteFavorite(dog);
 			return new ResponseEntity<>(HttpStatus.OK);
