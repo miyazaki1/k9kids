@@ -5,6 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
+import org.hibernate.Hibernate;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.ParameterizedTypeReference;
@@ -36,7 +37,7 @@ public class UnitTesting {
 		System.out.println(fca.getAllAccounts().get(0));
 	}
 	
-	@Test
+	//@Test
 	public void testApi() {
 		AnnotationConfigApplicationContext annConfigContext = new AnnotationConfigApplicationContext("com.brooks");
 

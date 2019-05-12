@@ -1,32 +1,27 @@
 package com.brooks.model;
 
-import java.util.Arrays;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.OrderColumn;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="XIO.ACCOUNT")
+@Table(name="MIYAZAKI1.ACCOUNT")
 public class Account {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Sequence")
-	@SequenceGenerator(name = "id_Sequence", sequenceName = "ID_SEQ")
-	@Column(name="user_id", nullable = false, insertable=false)
-	int user_id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	Long id;
 	
 	@Column(name="username")
     String username;
+	
+	@Column(name="password")
+    String password;
+	
 	
 	@Column(name="first_name")
     String first_name;
@@ -34,39 +29,28 @@ public class Account {
 	@Column(name="last_name")
     String last_name;
 	
-	@Column(name="password")
-    String password;
-	
+
 	@Column(name="email")
     String email;
 	
-	@OneToMany(cascade={CascadeType.REFRESH, CascadeType.MERGE}, fetch = FetchType.EAGER)	
-	@JoinColumn(name="id",referencedColumnName="account_id")
-	@OrderColumn(name="breed_id")
-	Dog[] doggos;
-    
-    public Account() {
-        super();
-    }
+    public Account() {}
 
-	public Account(int user_id, String username, String first_name, String last_name, String password, String email,
-			Dog[] dogs) {
+	public Account(Long id, String username, String password, String first_name, String last_name, String email) {
 		super();
-		this.user_id = user_id;
+		this.id = id;
 		this.username = username;
+		this.password = password;
 		this.first_name = first_name;
 		this.last_name = last_name;
-		this.password = password;
 		this.email = email;
-		this.doggos = dogs;
 	}
 
-	public int getUser_id() {
-		return user_id;
+	public Long getId() {
+		return id;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getUsername() {
@@ -75,6 +59,14 @@ public class Account {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getFirst_name() {
@@ -93,14 +85,6 @@ public class Account {
 		this.last_name = last_name;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -109,24 +93,15 @@ public class Account {
 		this.email = email;
 	}
 
-	public Dog[] getDogs() {
-		return doggos;
-	}
-
-	public void setDogs(Dog[] dogs) {
-		this.doggos = dogs;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + Arrays.hashCode(doggos);
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((first_name == null) ? 0 : first_name.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((last_name == null) ? 0 : last_name.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + user_id;
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -140,8 +115,6 @@ public class Account {
 		if (getClass() != obj.getClass())
 			return false;
 		Account other = (Account) obj;
-		if (!Arrays.equals(doggos, other.doggos))
-			return false;
 		if (email == null) {
 			if (other.email != null)
 				return false;
@@ -151,6 +124,11 @@ public class Account {
 			if (other.first_name != null)
 				return false;
 		} else if (!first_name.equals(other.first_name))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
 			return false;
 		if (last_name == null) {
 			if (other.last_name != null)
@@ -162,8 +140,6 @@ public class Account {
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
-		if (user_id != other.user_id)
-			return false;
 		if (username == null) {
 			if (other.username != null)
 				return false;
@@ -174,9 +150,8 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [user_id=" + user_id + ", username=" + username + ", first_name=" + first_name + ", last_name="
-				+ last_name + ", password=" + password + ", email=" + email + ", dogs=" + Arrays.toString(doggos) + "]";
+		return "Account [id=" + id + ", username=" + username + ", password=" + password + ", first_name=" + first_name
+				+ ", last_name=" + last_name + ", email=" + email + "]";
 	}
-
-	
+    
 }

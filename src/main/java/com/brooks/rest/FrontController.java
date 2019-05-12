@@ -11,16 +11,16 @@ import com.brooks.model.Dog;
 
 public interface FrontController {
 
+	// ACCOUNTS TABLE
 	List<Account> getAllAccounts();
 	ResponseEntity<Account> getAccountByUsername(String username);
+	ResponseEntity<Account> getAccountById(Long id);
 	ResponseEntity<ClientMessage> createAccount(Account account);
 	ResponseEntity<ClientMessage> updateAccount(String username, Account account);
 	ResponseEntity<ClientMessage> deleteAccount(String username);
-	ResponseEntity<ClientMessage> addPreference(String username, int breed_id );
 
-	List<Dog> getAllDogs();
-	ResponseEntity<Dog> getDogByUsername(String username, Dog dog);
-	ResponseEntity<ClientMessage> createDog(Dog dog);
-	ResponseEntity<ClientMessage> updateDog(String username, Dog dog);
-	ResponseEntity<ClientMessage> deleteDog(String username);
+	// DOG TABLE
+	List<Dog> getFavoritesByUsername(String username);
+	ResponseEntity<ClientMessage> createFavorites(Dog dog);
+	ResponseEntity<ClientMessage> deleteFavorite(Dog dog);
 }

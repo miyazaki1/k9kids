@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.brooks.model.Account;
 import com.brooks.model.Dog;
 import com.brooks.repository.DogRepository;
-import com.brooks.repository.DogRepositoryHibernate;
 
 @Service("dogService")
 public class DogServiceAlpha implements DogService{
@@ -24,32 +24,24 @@ public class DogServiceAlpha implements DogService{
 
 	@Override
 	@Transactional
-	public List<Dog> getAllDogs() {
-		return dogRepository.getAllDogs();
+	public List<Dog> getDogByUsername(Account account) {
+		return dogRepository.getDogByUsername(account);
 	}
 
 	@Override
 	@Transactional
-	public Dog getDogByUsername(String username) {
-		return dogRepository.getDogByUsername(username);
-	}
-
-	@Override
-	public boolean createDog(Dog dog) {
-		dogRepository.createDog(dog);
+	public boolean createFavorite(Dog dog) {
+		
+		if(dog == null) { return false; }
+		
+		
+		dogRepository.createFavorite(dog);
 		return true;
 	}
 
 	@Override
-	public void updateDog(String username, Dog dog) {
-		dogRepository.updateDog(username, dog);
+	@Transactional
+	public void deleteFavorite(Dog dog) {
+		dogRepository.deleteFavorite(dog);
 	}
-
-	@Override
-	public void deleteDog(String username) {
-		dogRepository.deleteDog(username);
-	}
-
-
-
 }

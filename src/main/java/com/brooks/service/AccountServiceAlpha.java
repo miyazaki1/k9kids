@@ -37,6 +37,12 @@ public class AccountServiceAlpha implements AccountService{
 	
 	@Override
 	@Transactional
+	public Account getAccountById(Long id) {
+		return accountRepository.getAccountById(id);
+	}
+	
+	@Override
+	@Transactional
 	public Account validateAccountLogin(String username, String password){
 		return accountRepository.validateAccountLogin(username, password);
 	}
@@ -61,15 +67,6 @@ public class AccountServiceAlpha implements AccountService{
 		accountRepository.deleteAccount(username);
 	}
 
-	@Override
-	public void addPreferencesToUser(List<Dog> dogs, Account account) {
-		accountRepository.addPreferencesToUser(dogs, account);
-	}
 
-	@Override
-	public Account addPreference(String username, int breed_id) {
-		
-		return accountRepository.addPreference(username, breed_id);
-	}
 
 }
