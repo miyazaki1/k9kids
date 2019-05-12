@@ -2,41 +2,42 @@ package com.brooks.repository;
 
 import java.util.List;
 
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
-import com.brooks.model.Canine;
+import com.brooks.model.ImageShort;
 
 @Repository("dogApiRepository")
 @Transactional
 public class DogApiRepositoryHibernate implements DogApiRepository{
 	
-	private final String apiUrl = "https://api.thedogapi.com/v1/breeds";
+	private final String apiUrl = "https://api.thedogapi.com/v1/";
+	private final String apiBreed = "breeds";
 	private final String apiKey = "?x-api-key=8e134487-f355-40b5-9ea7-7ac0f6ddefef";
 	
-	
-	@Autowired
-	private SessionFactory sessionFactory;
+	private final String search = "images/search?include_breed=1&breed_id=";
 	
 	@Override
 	public String getImageIdByBreed(int breed_id) {
-		
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.brooks");
-		RestTemplate rt = context.getBean(RestTemplate.class);
 
-		List<Canine> dogReq = rt.exchange("?x-api-key=8e134487-f355-40b5-9ea7-7ac0f6ddefef", HttpMethod.GET,
-				null, new ParameterizedTypeReference<List<Canine>>() {
-				}).getBody();
+		RestTemplate rt = new RestTemplate();
+
+		System.out.println("Made it into getImage by breed id: " + breed_id);
 		
-		
-		
-		return null;
+		try {
+			List<ImageShort> images = rt.exchange( 
+					"https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=" + breed_id, HttpMethod.GET,
+					null, new ParameterizedTypeReference<List<ImageShort>>() {
+					}).getBody();
+			
+			return images.get(0).getUrl();
+		} catch (IndexOutOfBoundsException e) {
+			
+			System.out.println("There was not a breed at " + breed_id + " exeption " + e);
+			return null;
+		}
 	}
-
 }

@@ -23,4 +23,8 @@ public interface FrontController {
 	List<Dog> getFavoritesByUsername(String username);
 	ResponseEntity<ClientMessage> createFavorites(Dog dog);
 	ResponseEntity<ClientMessage> deleteFavorite(Dog dog);
+	
+	// DOG API
+	String getImageIdByBreed(int breed_id);
+	
 }

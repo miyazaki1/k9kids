@@ -4,8 +4,6 @@ import static com.brooks.util.ClientMessageUtil.ACCOUNT_SUCCESSFUL;
 import static com.brooks.util.ClientMessageUtil.ACCOUNT_UNSUCCESSFUL;
 import static com.brooks.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 import static com.brooks.util.ClientMessageUtil.UPDATE_UNSUCCESSFUL;
-import static com.brooks.util.ClientMessageUtil.DOG_SUCCESSFUL;
-import static com.brooks.util.ClientMessageUtil.DOG_UNSUCCESSFUL;
 
 import java.util.List;
 
@@ -24,12 +22,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
 import com.brooks.model.Dog;
 import com.brooks.service.AccountService;
+import com.brooks.service.DogApiService;
 import com.brooks.service.DogService;
 
 @RestController("frontController")
@@ -44,6 +44,8 @@ public class FrontControllerAlpha implements FrontController {
 	private DogService dogService;
 	@Autowired
 	private AccountService accountService;
+	@Autowired
+	private DogApiService dogApiService;
 
 	@GetMapping("/all")
 	public List<Account> getAllAccounts() {
@@ -62,7 +64,7 @@ public class FrontControllerAlpha implements FrontController {
 	
 	@Override
 	@GetMapping("/users/id")
-	public ResponseEntity<Account> getAccountById(@RequestBody Long id) {
+	public ResponseEntity<Account> getAccountById(@RequestParam Long id) {
 		Account findAcc = accountService.getAccountById(id);
 		if(findAcc != null) {
 			return new ResponseEntity<>(findAcc, HttpStatus.OK);
@@ -151,6 +153,14 @@ public class FrontControllerAlpha implements FrontController {
 		} else {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
+	}
+
+	@Override
+	@GetMapping("/images/{breed_id}")
+	public String getImageIdByBreed(@PathVariable("breed_id") int breed_id) {
+		
+		System.out.println("getImageIdByBreedCalled looking for breed_id " + breed_id);
+		return dogApiService.getImageIdByBreed(breed_id);
 	}
 
 
