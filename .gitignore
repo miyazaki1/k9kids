@@ -1,1 +1,4 @@
 /target/
+
+*/applicationContext.xml
+src/main/webapp/WEB-INF/applicationContext.xml
