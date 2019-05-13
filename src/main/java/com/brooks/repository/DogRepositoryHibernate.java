@@ -19,7 +19,8 @@ public class DogRepositoryHibernate implements DogRepository{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	public DogRepositoryHibernate() {}
+	@Autowired
+	public DogApiRepository dogApiRepository;
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -52,5 +53,10 @@ public class DogRepositoryHibernate implements DogRepository{
 		Session session = sessionFactory.getCurrentSession();
 		Dog d = (Dog) session.byId(Dog.class).load(dog.getId());
 		session.delete(d);		
+	}
+
+	@Override
+	public void createFavoriteById(int breed_id) {
+		sessionFactory.getCurrentSession().save(dogApiRepository.getAllBreeds().get(breed_id));		
 	}
 }

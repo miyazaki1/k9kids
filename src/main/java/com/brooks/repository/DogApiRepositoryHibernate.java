@@ -50,7 +50,6 @@ public class DogApiRepositoryHibernate implements DogApiRepository{
 		
 		
 		List<Breed> breeds = new ArrayList<Breed>();
-		
 	
 		
 		for(Dog dog : dogRepository.getDogByUsername(a)) {
