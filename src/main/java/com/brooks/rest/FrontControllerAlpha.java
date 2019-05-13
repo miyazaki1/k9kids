@@ -143,6 +143,16 @@ public class FrontControllerAlpha implements FrontController {
 		else
 			return new ResponseEntity<>(ACCOUNT_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
 	}
+	
+	@Override
+	@PostMapping("fav/addById")
+	public ResponseEntity<ClientMessage> createFavoriteById(@RequestParam int breed_id){
+		
+		if (dogService.createFavoriteById(breed_id))
+			return new ResponseEntity<>(ACCOUNT_SUCCESSFUL, HttpStatus.CREATED);
+		else
+			return new ResponseEntity<>(ACCOUNT_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
+	}
 
 	@Override
 	@PostMapping("/fav/remove")

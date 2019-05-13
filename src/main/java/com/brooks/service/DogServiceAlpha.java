@@ -44,4 +44,11 @@ public class DogServiceAlpha implements DogService{
 	public void deleteFavorite(Dog dog) {
 		dogRepository.deleteFavorite(dog);
 	}
+
+	@Override
+	public boolean createFavoriteById(int id) {
+
+		dogRepository.createFavoriteById(id);
+		return true;
+	}
 }

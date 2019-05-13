@@ -8,5 +8,6 @@ import com.brooks.model.Dog;
 public interface DogRepository {
 	List<Dog> getDogByUsername (Account uaccount);
 	void createFavorite(Dog dog);
+	void createFavoriteById(int breed_id);
 	void deleteFavorite(Dog dog);
 }
