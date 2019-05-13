@@ -37,7 +37,7 @@ public class UnitTesting {
 		System.out.println(fca.getAllAccounts().get(0));
 	}
 	
-	//@Test
+	@Test
 	public void testApi() {
 		AnnotationConfigApplicationContext annConfigContext = new AnnotationConfigApplicationContext("com.brooks");
 
@@ -53,15 +53,15 @@ public class UnitTesting {
 		for (Canine dog : dogs) {
 			System.out.println(dog.toString());
 		}
-		
-		ResponseEntity<List<Image>> dogImages = rt.exchange("https://api.thedogapi.com/v1/images/search?x-api-key=8e134487-f355-40b5-9ea7-7ac0f6ddefef", HttpMethod.GET,
-				null, new ParameterizedTypeReference<List<Image>>() {
-				});
-		
-		List<Image> dogI = dogImages.getBody();
-		for(Image img : dogI)
-		{
-			System.out.println(img.toString());
-		}
+//		
+//		ResponseEntity<List<Image>> dogImages = rt.exchange("https://api.thedogapi.com/v1/images/search?x-api-key=8e134487-f355-40b5-9ea7-7ac0f6ddefef", HttpMethod.GET,
+//				null, new ParameterizedTypeReference<List<Image>>() {
+//				});
+//		
+//		List<Image> dogI = dogImages.getBody();
+//		for(Image img : dogI)
+//		{
+//			System.out.println(img.toString());
+//		}
 	}
 }

@@ -2,10 +2,24 @@ package com.brooks.model;
 
 import java.util.Arrays;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class ImageShort {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id")
 	private String id;
+	@Column(name="url")
 	private String url;
+	@Column(name="Categories")
 	private Category[] categories;
+	@Column(name="Breeds")
 	private Breed[] breeds;
 	public ImageShort() {
 		super();
