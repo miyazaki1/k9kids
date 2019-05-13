@@ -2,46 +2,56 @@ package com.brooks.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="MASTER.DOG")
+@Table(name="MIYAZAKI1.DOG")
 public class Dog {
 	
 	@Id
-	//@ManyToMany
-	@JoinColumn(name="username", referencedColumnName= "username")
-	String username;
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private Long id;
 	
-	@Column(name="breed")
-	Long breed_id;
+	@Column(name="account_id")
+	private Long account_id;
+	
+	@Column(name="breed_id")
+	private int breed_id;
+		
+	public Dog() {}
 
-	public Dog() {
+	public Dog(Long id, Long account_id, int breed_id) {
 		super();
-	}
-
-	public Dog(String username, Long breed_id) {
-		super();
-		this.username = username;
+		this.id = id;
+		this.account_id = account_id;
 		this.breed_id = breed_id;
 	}
 
-	public String getUsername() {
-		return username;
+	public Long getId() {
+		return id;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public Long getBreed_id() {
+	public Long getAccount_id() {
+		return account_id;
+	}
+
+	public void setAccount_id(Long account_id) {
+		this.account_id = account_id;
+	}
+
+	public int getBreed_id() {
 		return breed_id;
 	}
 
-	public void setBreed_id(Long breed_id) {
+	public void setBreed_id(int breed_id) {
 		this.breed_id = breed_id;
 	}
 
@@ -49,8 +59,9 @@ public class Dog {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((breed_id == null) ? 0 : breed_id.hashCode());
-		result = prime * result + ((username == null) ? 0 : username.hashCode());
+		result = prime * result + ((account_id == null) ? 0 : account_id.hashCode());
+		result = prime * result + breed_id;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
 
@@ -63,24 +74,25 @@ public class Dog {
 		if (getClass() != obj.getClass())
 			return false;
 		Dog other = (Dog) obj;
-		if (breed_id == null) {
-			if (other.breed_id != null)
+		if (account_id == null) {
+			if (other.account_id != null)
 				return false;
-		} else if (!breed_id.equals(other.breed_id))
+		} else if (!account_id.equals(other.account_id))
 			return false;
-		if (username == null) {
-			if (other.username != null)
+		if (breed_id != other.breed_id)
+			return false;
+		if (id == null) {
+			if (other.id != null)
 				return false;
-		} else if (!username.equals(other.username))
+		} else if (!id.equals(other.id))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Dog [username=" + username + ", breed_id=" + breed_id + "]";
-	} 
-	
+		return "Dog [id=" + id + ", account_id=" + account_id + ", breed_id=" + breed_id + "]";
+	}
 	
 	
 }

@@ -50,8 +50,8 @@ public class FrontControllerAlpha implements FrontController {
 		return accountService.getAllAccounts();
 	}
 
-	@GetMapping("/get/{username}")
-	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username, @RequestBody Account account){
+	@GetMapping("/users/{username}")
+	public ResponseEntity<Account> getAccountByUsername(@PathVariable("username") String username){
 		Account findAcc = accountService.getAccountByUsername(username);
 		if(findAcc != null) {
 			return new ResponseEntity<>(findAcc, HttpStatus.OK);
@@ -60,7 +60,17 @@ public class FrontControllerAlpha implements FrontController {
 		}
 	}
 	
-
+	@Override
+	@GetMapping("/users/id")
+	public ResponseEntity<Account> getAccountById(@RequestBody Long id) {
+		Account findAcc = accountService.getAccountById(id);
+		if(findAcc != null) {
+			return new ResponseEntity<>(findAcc, HttpStatus.OK);
+		} else {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+	}
+	
 	@PostMapping("/create")
 	public ResponseEntity<ClientMessage> createAccount(@RequestBody Account account) {
 		//logger.trace("Creating account " +account);
@@ -79,6 +89,7 @@ public class FrontControllerAlpha implements FrontController {
 			accountService.updateAccount(username, a);
 			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
 		} else {
+			
 			return new ResponseEntity<>(UPDATE_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
 		}
 	}
@@ -94,14 +105,14 @@ public class FrontControllerAlpha implements FrontController {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 	}
-
+	
 	// Check The account login information and sending through to the front end.
 	@PostMapping("/login")
 	public ResponseEntity<Account> loginUser(@RequestBody Account account, HttpServletRequest request) {
 		// logger.trace("Looking for account by username " + account.getUsername());
 		Account foundAcc = accountService.validateAccountLogin(account.getUsername(), account.getPassword());
 	
-		if (foundAcc != null) {
+		if (foundAcc != null && account.getUsername() != "") {
 			foundAcc.setPassword("");
 			return new ResponseEntity<>(foundAcc, HttpStatus.OK);
 		} else {
@@ -109,52 +120,40 @@ public class FrontControllerAlpha implements FrontController {
 		}
 	}
 
-	@GetMapping("/allDogs")
-	public List<Dog> getAllDogs() {
-		return dogService.getAllDogs();
+	@Override
+	@GetMapping("/fav/{username}")
+	public List<Dog> getFavoritesByUsername(@PathVariable("username")String username) {
+		Account findAcc = accountService.getAccountByUsername(username);
+		
+		System.out.println("Attempting to Display Favorites from: " + username +"'s Account");
+		
+		return dogService.getDogByUsername(findAcc);
 	}
 
-	@GetMapping("/getDog/{username}")
-	public ResponseEntity<Dog> getDogByUsername(@PathVariable("username") String username, @RequestBody Dog dog) {
-		Dog findDog = dogService.getDogByUsername(username);
-		if(findDog != null) {
-			return new ResponseEntity<>(findDog, HttpStatus.OK);
-		} else {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
-	}
-
-	@PostMapping("/createDog")
-	public ResponseEntity<ClientMessage> createDog(@RequestBody Dog dog) {
-		//logger.trace("Creating dog " + dog);
-		if(dogService.createDog(dog))
-			return new ResponseEntity<>(DOG_SUCCESSFUL, HttpStatus.CREATED);
+	@Override
+	@PostMapping("/fav/add")
+	public ResponseEntity<ClientMessage> createFavorites(@RequestBody Dog dog) {
+		if (dogService.createFavorite(dog))
+			return new ResponseEntity<>(ACCOUNT_SUCCESSFUL, HttpStatus.CREATED);
 		else
-			return new ResponseEntity<>(DOG_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
-
+			return new ResponseEntity<>(ACCOUNT_UNSUCCESSFUL, HttpStatus.BAD_REQUEST);
 	}
 
-	@PutMapping("/updateDog/{username}")
-	public ResponseEntity<ClientMessage> updateDog(@PathVariable("username") String username, @RequestBody Dog dog) {
-		//logger.trace("UpdatingDog "+ Dog);
-		Dog d = dogService.getDogByUsername(username);
-		if(d != null) {
-			dogService.updateDog(username, d);
-			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.OK);
-		} else {
-			return new ResponseEntity<>(UPDATE_SUCCESSFUL, HttpStatus.BAD_REQUEST);
-		}
-	}
-
-	@DeleteMapping("/deleteDog/{username}")
-	public ResponseEntity<ClientMessage> deleteDog(@PathVariable("username") String username) {
-	//logger.trace("Deleting dog "+ dog);
-		Dog d = dogService.getDogByUsername(username);
-		if(d != null) {
-			dogService.deleteDog(username);
+	@Override
+	@PostMapping("/fav/remove")
+	public ResponseEntity<ClientMessage> deleteFavorite(@RequestBody Dog dog) {
+		Account a = accountService.getAccountById(dog.getAccount_id());
+		
+		// Checks to see if there is an actual account that matches with the dog's account id.
+		if(a != null) {
+			dogService.deleteFavorite(dog);
 			return new ResponseEntity<>(HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 	}
+
+
+
+
 }

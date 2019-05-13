@@ -21,7 +21,7 @@ public class Main {
 	
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.html");
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 	
 		DogService dogService = context.getBean("dogService", DogService.class);
 		AccountService accountService = context.getBean("accountService", AccountService.class);
