@@ -2,11 +2,12 @@ package com.brooks.service;
 
 import java.util.List;
 
-import com.brooks.model.Account;
 import com.brooks.model.Dog;
 
 public interface DogService {
-	public List<Dog> getDogByUsername(Account account);
-	boolean createFavorite(Dog dog);
-	public void deleteFavorite(Dog dog);
+	List<Dog> getAllDogs ();
+	public Dog getDogByUsername(String username);
+	boolean createDog(Dog dog);
+	public void updateDog(String username, Dog dog);
+	public void deleteDog(String username);
 }

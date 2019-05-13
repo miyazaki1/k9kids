@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.brooks.model.Account;
-import com.brooks.model.Dog;
 import com.brooks.repository.AccountRepository;
 
 @Service("accountService")
@@ -37,12 +36,6 @@ public class AccountServiceAlpha implements AccountService{
 	
 	@Override
 	@Transactional
-	public Account getAccountById(Long id) {
-		return accountRepository.getAccountById(id);
-	}
-	
-	@Override
-	@Transactional
 	public Account validateAccountLogin(String username, String password){
 		return accountRepository.validateAccountLogin(username, password);
 	}
@@ -66,7 +59,5 @@ public class AccountServiceAlpha implements AccountService{
 	public void deleteAccount(String username) {
 		accountRepository.deleteAccount(username);
 	}
-
-
 
 }
