@@ -162,7 +162,7 @@ public class FrontControllerAlpha implements FrontController {
 	}
 	
 	@Override
-	@GetMapping("/breeds/id/{breed_id")
+	@GetMapping("/breeds/id/{breed_id}")
 	public Breed getBreedInfoById(@PathVariable("breed_id)") int breed_id) {
 		return dogApiService.getBreedInfoById(breed_id);
 	}
