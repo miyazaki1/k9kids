@@ -3,10 +3,10 @@ package com.brooks.rest;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
+import com.brooks.model.Breed;
 import com.brooks.model.Dog;
 
 public interface FrontController {
@@ -25,6 +25,8 @@ public interface FrontController {
 	ResponseEntity<ClientMessage> deleteFavorite(Dog dog);
 	
 	// DOG API
+	List<Breed> getAllBreeds();
+	Breed getBreedInfoByName(String breed_name);
+	Breed getBreedInfoById(int breed_id);
 	String getImageIdByBreed(int breed_id);
-	
 }

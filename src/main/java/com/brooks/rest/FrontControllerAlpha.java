@@ -27,6 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
+import com.brooks.model.Breed;
 import com.brooks.model.Dog;
 import com.brooks.service.AccountService;
 import com.brooks.service.DogApiService;
@@ -145,7 +146,6 @@ public class FrontControllerAlpha implements FrontController {
 	@PostMapping("/fav/remove")
 	public ResponseEntity<ClientMessage> deleteFavorite(@RequestBody Dog dog) {
 		Account a = accountService.getAccountById(dog.getAccount_id());
-		
 		// Checks to see if there is an actual account that matches with the dog's account id.
 		if(a != null) {
 			dogService.deleteFavorite(dog);
@@ -156,14 +156,30 @@ public class FrontControllerAlpha implements FrontController {
 	}
 
 	@Override
+	@GetMapping("/breeds/all")
+	public List<Breed> getAllBreeds() {
+		return dogApiService.getAllBreeds();
+	}
+	
+	@Override
+	@GetMapping("/breeds/id/{breed_id")
+	public Breed getBreedInfoById(@PathVariable("breed_id)") int breed_id) {
+		return dogApiService.getBreedInfoById(breed_id);
+	}
+
+	@Override
+	@GetMapping("/breeds/name/{breed_name}")
+	public Breed getBreedInfoByName(@PathVariable("breed_name") String breed_name) {
+		return dogApiService.getBreedInfoByName(breed_name);
+	}
+
+	@Override
 	@GetMapping("/images/{breed_id}")
 	public String getImageIdByBreed(@PathVariable("breed_id") int breed_id) {
 		
 		System.out.println("getImageIdByBreedCalled looking for breed_id " + breed_id);
 		return dogApiService.getImageIdByBreed(breed_id);
 	}
-
-
 
 
 }
