@@ -5,6 +5,7 @@ import static com.brooks.util.ClientMessageUtil.ACCOUNT_UNSUCCESSFUL;
 import static com.brooks.util.ClientMessageUtil.UPDATE_SUCCESSFUL;
 import static com.brooks.util.ClientMessageUtil.UPDATE_UNSUCCESSFUL;
 
+import java.rmi.registry.Registry;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,12 +30,13 @@ import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
 import com.brooks.model.Breed;
 import com.brooks.model.Dog;
+import com.brooks.model.ImageShort;
 import com.brooks.service.AccountService;
 import com.brooks.service.DogApiService;
 import com.brooks.service.DogService;
 
 @RestController("frontController")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200" , allowedHeaders= "*")
 @RequestMapping(path = "/account", produces = { MediaType.APPLICATION_JSON_VALUE })
 public class FrontControllerAlpha implements FrontController {
 
@@ -162,8 +164,14 @@ public class FrontControllerAlpha implements FrontController {
 	}
 	
 	@Override
-	@GetMapping("/breeds/id/{breed_id}")
-	public Breed getBreedInfoById(@PathVariable("breed_id)") int breed_id) {
+	@GetMapping("/breeds/user")
+	public List<Breed> getBreedByUsername(@RequestParam String username){
+		return dogApiService.getBreedByUsername(username);
+	}
+	
+	@Override
+	@GetMapping("/breeds/id")
+	public Breed getBreedInfoById(@RequestParam int breed_id) {
 		return dogApiService.getBreedInfoById(breed_id);
 	}
 
@@ -174,8 +182,8 @@ public class FrontControllerAlpha implements FrontController {
 	}
 
 	@Override
-	@GetMapping("/images/{breed_id}")
-	public String getImageIdByBreed(@PathVariable("breed_id") int breed_id) {
+	@GetMapping("/images{breed_id}")
+	public ImageShort getImageIdByBreed(@RequestParam int breed_id) {
 		
 		System.out.println("getImageIdByBreedCalled looking for breed_id " + breed_id);
 		return dogApiService.getImageIdByBreed(breed_id);

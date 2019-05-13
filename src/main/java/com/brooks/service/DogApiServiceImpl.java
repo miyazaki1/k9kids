@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.brooks.model.Breed;
+import com.brooks.model.ImageShort;
 import com.brooks.repository.DogApiRepository;
 
 @Service("dogApiService")
@@ -19,6 +20,12 @@ public class DogApiServiceImpl implements DogApiService{
 	@Transactional
 	public List<Breed> getAllBreeds() {
 		return dogApiRepository.getAllBreeds();
+	}
+	
+	@Override
+	@Transactional
+	public List<Breed> getBreedByUsername(String username) {
+		return dogApiRepository.getBreedByUsername(username);
 	}
 
 	@Override
@@ -35,7 +42,7 @@ public class DogApiServiceImpl implements DogApiService{
 	
 	@Override
 	@Transactional
-	public String getImageIdByBreed(int breed_id) {
+	public ImageShort getImageIdByBreed(int breed_id) {
 		return dogApiRepository.getImageIdByBreed(breed_id);
 	}
 }

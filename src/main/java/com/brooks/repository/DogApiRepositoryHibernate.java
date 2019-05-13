@@ -1,5 +1,6 @@
 package com.brooks.repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,9 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
+import com.brooks.model.Account;
 import com.brooks.model.Breed;
+import com.brooks.model.Dog;
 import com.brooks.model.ImageShort;
 
 @Repository("dogApiRepository")
@@ -25,6 +28,12 @@ public class DogApiRepositoryHibernate implements DogApiRepository{
 	private final String breedInfo = "/search?q=";
 	
 	@Autowired
+	private AccountRepository accountRepository;
+	
+	@Autowired
+	private DogRepository dogRepository;
+	
+	@Autowired
 	private RestTemplate restTemplate;
 	
 	@Override
@@ -33,6 +42,23 @@ public class DogApiRepositoryHibernate implements DogApiRepository{
 				apiBaseURL + apiBreed + apiKey, HttpMethod.GET,
 				null, new ParameterizedTypeReference<List<Breed>>() {
 				}).getBody();	
+	}
+	
+	@Override
+	public List<Breed> getBreedByUsername(String username) {
+		Account a = accountRepository.getAccountByUsername(username);
+		
+		
+		List<Breed> breeds = new ArrayList<Breed>();
+		
+	
+		
+		for(Dog dog : dogRepository.getDogByUsername(a)) {
+			breeds.add(getBreedInfoById(dog.getBreed_id()));
+		}
+		
+		
+		return breeds;
 	}
 	
 	@Override
@@ -56,17 +82,19 @@ public class DogApiRepositoryHibernate implements DogApiRepository{
 	}
 
 	@Override
-	public String getImageIdByBreed(int breed_id) {
+	public ImageShort getImageIdByBreed(int breed_id) {
 		try {
 			List<ImageShort> images = restTemplate.exchange( 
 					apiBaseURL +  imageSearch + breed_id, HttpMethod.GET,
 					null, new ParameterizedTypeReference<List<ImageShort>>() {
 					}).getBody();
 			
-			return images.get(0).getUrl();
+			return images.get(0);
 		} catch (IndexOutOfBoundsException e) {
 			System.out.println("There was not a breed at " + breed_id + " exeption " + e);
 			return null;
 		}
 	}
+
+
 }
