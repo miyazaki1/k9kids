@@ -8,6 +8,7 @@ import com.brooks.ajax.ClientMessage;
 import com.brooks.model.Account;
 import com.brooks.model.Breed;
 import com.brooks.model.Dog;
+import com.brooks.model.ImageShort;
 
 public interface FrontController {
 
@@ -25,8 +26,11 @@ public interface FrontController {
 	ResponseEntity<ClientMessage> deleteFavorite(Dog dog);
 	
 	// DOG API
-	List<Breed> getAllBreeds();
+	List<Breed> getAllBreeds();	
+	List<Breed> getBreedByUsername(String username);
+
 	Breed getBreedInfoByName(String breed_name);
+	
 	Breed getBreedInfoById(int breed_id);
-	String getImageIdByBreed(int breed_id);
+	ImageShort getImageIdByBreed(int breed_id);
 }
