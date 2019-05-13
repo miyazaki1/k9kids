@@ -34,7 +34,6 @@
             value="jdbc:oracle:thin:@revpetapi.c6a23qjxpkwi.us-east-2.rds.amazonaws.com:1521:PETAPI" />
         <property name="username" value="Miyazaki1" />
         <property name="password" value="KinomotoSakura10" />
-                <property name="current_session_context_class" value="thread"/> 
         
     </bean>
     <bean name="sessionFactory"
@@ -55,8 +54,5 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
-    <bean name="restTemplate" 
-    	class="org.springframework.web.client.RestTemplate">
-    	<property name="restTemplate" ref="restTemplate" />
-    </bean>
+   
 </beans>
